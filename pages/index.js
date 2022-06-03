@@ -7,7 +7,7 @@ function HomePage() {
       <Head>
         <title>Anasayfa</title>
       </Head>
-      <p>Merhaba</p>
+      <p>Merhaba YAPIYORUZ BU İŞİ</p>
     </Layout>
   );
 }
