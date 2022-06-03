@@ -1,0 +1,546 @@
+.emr-nav {
+    position: relative;
+    background: #fff;
+    padding: 16px 5px;
+    /* box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.25); */
+    z-index: 1;
+}
+
+.vf-logo {
+    margin-top: 0px;
+}
+
+.emr-nav .spring {
+    margin: 0 auto;
+    max-width: 1310px;
+}
+
+.logo-bar {
+    width: 100%;
+    max-width: 900px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+ul.line-menu-ul {
+    width: 100%;
+    padding: 0;
+    position: relative;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+ul.line-menu-ul::before {
+    position: absolute;
+    width: 77%;
+    top: 10px;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    height: 5px;
+    background: #dadada;
+    z-index: 1;
+}
+
+
+ul.line-menu-ul li.line-menu-li a.passed .line-menu-circle .line-menu-circle-in {
+    background: #e60000;
+    border-radius: unset;
+    background-size: cover;
+    border: none;
+    border-radius: 50%;
+}
+
+ul.line-menu-ul li.line-menu-li a.passed .line-menu-circle .line-menu-circle-in span {
+    display: none;
+}
+
+ul.line-menu-ul li.line-menu-li a.passed p {
+    color: #333;
+}
+
+ul.line-menu-ul li.line-menu-li a.active p {
+    color: #333333;
+    font-weight: bold;
+}
+
+ul.line-menu-ul li.line-menu-li a.active .line-menu-circle .line-menu-circle-in {
+    width: 24px;
+    height: 24px;
+    position: relative;
+
+}
+
+ul.line-menu-ul li.line-menu-li a.active .line-menu-circle .line-menu-circle-in::before {
+    content: "";
+    background: transparent;
+    border: 2px solid #fff;
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+ul.line-menu-ul li.line-menu-li {
+    float: left;
+    list-style: none;
+    width: 25%;
+    text-align: center;
+    z-index: 2;
+    position: relative;
+}
+
+ul.line-menu-ul li.line-menu-li p {
+    color: #666666;
+    font-size: 16px;
+    margin-top: 29px;
+    margin-bottom: 0;
+    font-weight: 300;
+}
+
+ul.line-menu-ul li.line-menu-li p a {
+    font-weight: 300;
+}
+
+ul.line-menu-ul li.line-menu-li .line-menu-circle {
+    width: 100%;
+    float: left;
+}
+
+ul.line-menu-ul li.line-menu-li .line-menu-circle .line-menu-circle-in {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: #cccccc;
+    margin: auto;
+    color: #afafaf;
+    font-size: 20px;
+    text-align: center;
+    line-height: 27px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin-top: 4px;
+}
+
+ul.line-menu-ul li.line-menu-li a.active .line-menu-circle .line-menu-circle-in {
+    border-radius: 50%;
+    background-color: #e60000;
+    border: 0;
+    line-height: 29px;
+    font-size: 24px;
+    margin-top: 0;
+}
+
+ul.line-menu-ul li.line-menu-li a {
+    cursor: default;
+}
+
+.line-menu-li::after {
+    content: "";
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    background: #ebebeb;
+    top: 12px;
+    left: 50%;
+    z-index: -1;
+}
+
+.line-menu-li:last-child::after {
+    width: 0;
+    height: 0;
+    position: absolute;
+    background: transparent;
+    top: 0;
+    left: 0%;
+    z-index: 0;
+}
+
+.line-menu-li .passed::after {
+    content: "";
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    background: #e60000;
+    top: 12px;
+    left: 50%;
+    z-index: 1;
+}
+
+.vf-logo .brand__logo {
+    width: 48px;
+    height: 48px;
+}
+
+span.logo-text {
+    display: none;
+}
+
+.nav-cont {
+    padding: 0 13px 0px;
+    display: flex;
+    justify-content: center;
+    background: rgb(255, 255, 255);
+    margin-bottom: 32px;
+}
+
+.nav-cont a.item {
+    font-size: 20px;
+    line-height: 1.4;
+    text-align: center;
+    color: #333333;
+    padding: 11px 3px;
+    width: 100%;
+    max-width: 235px;
+    margin-right: 20px;
+    position: relative;
+}
+
+.nav-cont a.item.active {
+    font-weight: bold;
+    line-height: 1.4;
+    border-bottom: 3px solid #e60000;
+}
+
+.nav-cont a.item:last-child {
+    margin-right: 0;
+}
+h2.main-head{
+    font-size: 28px;
+    margin-top: 4px;
+    margin-bottom: 40px;
+    font-family: VodafoneRegularBold;
+}
+.nav-cont .tag {
+    position: absolute;
+    top: -16px;
+    right: 15px;
+}
+.nav-cont .tag .tag-item {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 22px;
+    font-size: 16px;
+    padding: 0 15px;
+    font-weight: normal;
+    line-height: 22px;
+    color: #ffffff;
+    border-radius: 13px;
+    background-color: #009900;
+}
+.tariff-select-tab{
+    display: flex;
+    margin-bottom: 24px;
+}
+.tariff-select-tab .item{
+    width: 100%;
+    max-width: 292px;  
+    border-top-right-radius: 6px;
+    border-top-left-radius: 6px;
+    border: solid 1px #979797;
+    background-color: #fff;
+    margin-right: 16px;
+}
+.tariff-select-tab .item p {
+    min-height: 62px;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 1px;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    background: #979797;
+    color: #fff;
+    font-size: 24px;
+    text-align: center;
+    line-height: 0.92;
+}
+.tariff-select-tab .item.all{
+    max-width: 106px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tariff-select-tab .item.all p{
+    font-size: 14px;
+    color: #333;
+    background: unset;
+    font-weight: bold;
+}
+.tariff-select-tab .item.red p{
+    background-image: linear-gradient(78deg, #8e0000, #f70000);
+}
+.tariff-select-tab .item.uyumlu p{
+    background-image: linear-gradient(78deg, #365d6b, #497a8e);
+}
+.tariff-select-tab .item.simple p{
+    background-image: linear-gradient(78deg, #642759, #942096);
+}
+.tariff-select-tab .item span{
+    display: block;
+    padding: 19px 12px;
+    text-align: center;
+}
+.spring {
+    margin: 0 auto;
+    max-width: 1070px;
+    padding: 0 20px;
+}
+.tariff-select-tab .item:last-child {
+    margin-right: 0;
+}
+.tariff-select-tab .item.active{
+    border: solid 2px #007c92;
+}
+.tariff-select-tag {
+    padding: 17px 0;
+    padding-bottom: 12px;
+}
+.tariff-select-tag .item{
+    margin-right: 12px ;
+    padding: 8px 12px;
+    border-radius: 20px;
+    background-color: #fff;
+    display: inline-block;
+    margin-bottom: 5px;
+}
+.tariff-select-tag .item span {
+    display: block;
+    min-width: max-content;
+}
+.tariff-select-tag .item>div {
+    display: block;
+    min-width: max-content;
+}
+.tariff-select-tag .item.active{
+    background: #007C92;
+    color: #fff;
+}
+.tariff-select-tag .item.active span{
+    display: inline-block;
+}
+.tariff-select-tag .item.active svg{
+    width: 15px;
+    height: 15px;
+    margin-top: -2px;
+    margin-left: 5px;
+    display: inline-block;
+    stroke-width: .6em;
+}
+.tariff-select-tab.v2{
+    background: #fff;
+    padding: 16px;
+    padding-bottom: 0;
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.16);
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+.tariff-select-tab.v2 .item{
+    width: 100%;
+    max-width: unset;
+    border: unset;
+    color: #fff;
+    min-height: 148px;
+}
+.tariff-select-tab.v2 .item p {
+    background: unset;
+    font-family: VodafoneRegularBold;
+    min-height: unset;
+    display: block;
+    padding-top: 26px;
+    padding-bottom: 12px;
+}
+.tariff-select-tab.v2 .item span {
+    padding: 0px 15px;
+    padding-bottom: 34px;
+    text-align: center;
+}
+.tariff-select-tab.v2 .item.red{
+    background-image: linear-gradient(78deg, #8e0000, #f70000);
+
+}
+.tariff-select-tab.v2 .item.uyumlu{
+    background-image: linear-gradient(78deg, #365d6b, #497a8e);
+    
+}
+.tariff-select-tab.v2 .item.simple{
+    background-image: linear-gradient(78deg, #642759, #942096);
+    
+}
+.esas-block {
+    padding: 32px 0;
+}
+.esas-block  .sss-item {
+    padding: 21px 32px 20px;
+}
+.esas-block  .sss-block .accordion-vf {
+    font-size: 20px;
+}
+.daha-fazla-btn{
+    max-width: 300px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 55px;
+    margin-bottom: 30px;
+}
+
+@media only screen and (max-width: 1045px) {
+    ul.middle-ul li.middle-li {
+        width: 33%;
+        margin: 0;
+    }
+
+    ul.middle-ul li.middle-li-line {
+        width: 0;
+    }
+}
+
+@media only screen and (max-width: 970px) {
+
+    .logo-bar {
+        max-width: 535px;
+    }
+}
+
+@media only screen and (max-width: 639px) {
+    .nav-cont .tag {
+        position: absolute;
+        top: -11px;
+        right: 22px;
+    }
+    .nav-cont .tag .tag-item {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        height: 22px;
+        font-size: 14px;
+        padding: 0 11px;
+    }
+    .emr-nav {
+        min-height: 108px;
+        box-shadow: none;
+
+        border-bottom: 1px solid #ebebeb;
+    }
+
+    .emr-nav .logo-text {
+        display: block;
+        text-align: center;
+        margin-bottom: 15px;
+        font-size: 18px;
+        line-height: 1.33;
+
+        font-weight: normal;
+        margin-left: 0;
+        width: 100%;
+        position: relative;
+        left: unset;
+        transform: unset;
+    }
+
+    ul.line-menu-ul li.line-menu-li .line-menu-circle .line-menu-circle-in {
+        width: 20px;
+        height: 20px;
+        font-size: 14px !important;
+        line-height: 27px;
+    }
+
+    ul.line-menu-ul li.line-menu-li p {
+        font-size: 13px;
+        margin-top: 29px;
+    }
+
+    .vf-logo .brand__logo {
+        width: 24px;
+        height: 24px;
+    }
+
+    .nav-cont a.item {
+        font-size: 16px;
+        padding: 11px 0;
+        padding-bottom: 12px;
+        margin-right: 0;
+    }
+
+    .nav-cont {
+        padding: 0;
+        margin-bottom: 19px;
+    }
+    h2.main-head{
+        font-size: 20px;
+        margin-top: 8px;
+        margin-bottom: 20px;
+        font-family: VodafoneRegularBold;
+    }
+    .tariff-select-tab .item{
+        min-width: 93px;
+    }
+    .tariff-select-tab .item p {
+        min-height: 62px;
+        padding: 12px 1px 6px 1px;
+        font-size: 13px;
+        line-height: 1.57;
+    }
+    .tariff-select-tab .item span {
+        display: block;
+        padding: 16px 3px;
+        text-align: center;
+        font-size: 12px;
+    }
+
+    .tariff-select-tab .item.all {
+        min-width: 64px;
+        max-width: 64px;
+    }
+    .spring {
+        padding: 0 16px;
+    }
+    .tariff-select-tab {
+        overflow-x: auto;
+        padding-left: 16px;
+        padding-right: 32px;
+    }
+    .tariff-select-spr{
+        padding: 0 ;
+    }
+    .tariff-select-tab{
+        display: flex;
+        margin-bottom: 20px;
+    }
+    .tariff-select-tag {
+        display: flex;
+        overflow-x: auto;
+        padding-left: 16px;
+        padding-right: 16px;
+        padding-top: 0;
+        margin-bottom: 37px;
+    }
+    .tariff-select-spr.v2{
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    .tariff-select-tab.v2 .item p {
+        padding-top: 12px;
+        padding-bottom: 12px;
+    }
+    .tariff-select-tab.v2 .item span {
+        padding: 0px 2px;
+        padding-bottom: 13px;
+    }
+    .tariff-select-tab.v2 .item {
+        margin-right: 8px;
+    }
+    .daha-fazla-btn {
+        margin-top: 12px;
+        margin-bottom: 30px;
+    }
+}

@@ -1,0 +1,695 @@
+.tarife-card {
+    position: relative;
+    margin: 0 auto;
+    max-width: 360px;
+    margin-bottom: 20px;
+    margin-top: 30px;
+    padding: 0 0 5px;
+    border-radius: 6px;
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.16);
+    background-color: #ffffff;
+}
+
+.tarife-card>.tag+.tarife-head {
+    border-top-left-radius: 0;
+}
+
+.tarife-card .tag {
+    position: absolute;
+    top: -30px;
+}
+
+.tarife-card .tag .tag-item {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    font-size: 16px;
+    margin-right: 5px;
+    padding: 0 15px;
+    font-weight: bold;
+    line-height: 22px;
+    color: #ffffff;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+
+.tarife-card .tag .tag-item.blue {
+    background: #007c92;
+}
+
+.tarife-card .tag .tag-item.yellow {
+    background: #EB9700;
+}
+
+.tarife-card .tag .tag-item.green {
+    background: #009900;
+}
+
+.tarife-head {
+    height: 121px;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    padding: 16px 16px 17px 16px;
+    color: #ffffff;
+}
+
+.red .tarife-head {
+    background-image: linear-gradient(71deg, #830000 0%, #e50000 99%);
+}
+
+.uyumlu .tarife-head {
+    background-image: linear-gradient(71deg, #375d6b 0%, #49798e 99%);
+}
+
+.simple .tarife-head {
+    background-image: linear-gradient(71deg, #65275a 0%, #922094 99%);
+}
+
+.uyumlu-drk .tarife-head {
+    background-image: linear-gradient(71deg, #111 0%, #555 99%);
+}
+.tarife-head .tarife-name>span {
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 1.89;
+}
+
+.tarife-head .tarife-price>p {
+    display: inline-block;
+    margin: 0;
+    font-size: 28px;
+    font-weight: bold;
+    line-height: 1.21;
+}
+
+.tarife-head .tarife-price>p .tl-icon {
+    font-weight: normal;
+}
+
+.tarife-head .tarife-price>span {
+    margin-left: 4px;
+    font-size: 18px;
+    line-height: 1.33;
+}
+
+.tarife-head .tarife-price-text {
+    margin-top: 8px;
+    font-size: 14px;
+    line-height: 1.29;
+}
+
+strong {
+    font-family: VodafoneRegularBold;
+}
+
+.tl-icon {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.tarife-int {
+    font-size: 24px;
+    font-weight: bold;
+    padding: 16px;
+}
+
+.tarife-int * {
+    display: inline-block;
+}
+
+.tarife-int .sinirsiz {
+    color: #999;
+    position: relative;
+    z-index: 2;
+}
+
+.tarife-int .sinirsiz::after {
+    content: "";
+    display: block;
+    width: 10px;
+    height: 10px;
+    border: 1px solid #ccc;
+    border-bottom: unset;
+    border-left: unset;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%) rotate(-45deg);
+    bottom: -13px;
+    background: #fff;
+    z-index: 2;
+}
+
+.tarife-int .sinirsiz-block{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    padding: 15px;
+
+}
+.tarife-int  .sinirsiz-icerik{
+    background:#fff;
+    display: block;
+    border-radius: 4px;
+    border: solid 1px #ccc;
+    margin-top: 24px;
+    padding: 6px 16px;
+}
+.sinirsiz-icerik .item span{
+    font-size: 12px;
+    font-weight: bold;
+    display: block;
+}
+.sinirsiz-icerik .item:last-child{
+    margin-top: 12px;
+}
+.sinirsiz-icerik .item .img-cont{
+    line-height: 0;
+}
+.tarife-int .gb{
+    min-width: 54px;
+}
+.tarife-uygulama {
+    padding: 7px 8px 7px 8px;
+    border-radius: 4px;
+    border: solid 1px #ccc;
+    margin-top: -9px;
+    /* width: max-content; */
+    display: flex;
+    align-items: center;
+    max-width: max-content;
+}
+
+.tarife-uygulama.v1v2 {
+    position: relative;
+    left: 37%;
+    transform: translate(-50%);
+}
+
+.tarife-uygulama.v3plus {
+    left: unset;
+    transform: unset;
+}
+
+.tarife-uygulama .item {
+    line-height: 0;
+    margin-right: 9px;
+}
+
+.tarife-uygulama .item>a {
+    font-size: 14px;
+    line-height: 1.57;
+    text-decoration: underline;
+    min-width: max-content;
+}
+
+.tarife-uygulama .item:last-child {
+    margin-right: 0;
+}
+
+.tarife-uygulama-block {
+    padding: 0 16px;
+    margin-bottom: 15px;
+}
+
+.spring.tarifeler-spring {
+    margin-top: 20px;
+}
+
+.tarife-dty {
+    background: #f4f4f4;
+    margin-bottom: 16px;
+}
+
+.tarife-dty .item {
+
+    padding: 16px;
+    padding-bottom: 0;
+}
+
+.tarife-dty .item>div {
+    display: flex;
+    align-items: center;
+    border-bottom: solid 1px #ebebeb;
+    padding-bottom: 16px;
+}
+
+.tarife-dty .item .img {
+    min-width: 24px;
+    margin-right: 13px;
+    line-height: 0;
+}
+
+.tarife-dty .item .text {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.tarife-dty .item:last-child div {
+    border-bottom: unset;
+}
+
+.btn-cont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+    padding-top: 0;
+}
+
+.btn-cont .button {
+    width: 100%;
+    margin: 0;
+    margin-right: 12px;
+
+    padding: 5px 4px;
+    font-size: 18px;
+    line-height: 28px;
+}
+
+.btn-cont .button:last-child {
+
+    margin-right: 0;
+}
+
+.btn-cont.v2 {
+    flex-direction: column;
+}
+
+.btn-cont.v2 .red-btn {
+    font-size: 18px;
+    line-height: 1.33;
+    color: #e60000;
+    margin-bottom: 14px;
+}
+
+.tarife-dty .item.empty {
+    background: #fff;
+    min-height: 57px;
+}
+
+.myot-slct-block .myotslct-head {
+    display: flex;
+    align-items: center;
+    margin-top: 16px;
+    margin-bottom: 12px;
+}
+
+.myot-slct-block .myotslct-head img {
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+}
+
+.myot-slct-block .myotslct-head span {
+    display: block;
+    font-size: 18px;
+    line-height: 1.33;
+    color: #333333;
+    font-family: VodafoneRegular;
+}
+
+.myot-slct-block {
+    margin-bottom: 2px;
+}
+
+.myot-items {
+    display: block;
+    max-width: unset;
+    /* overflow-x: auto; */
+    /* overflow-y: hidden; */
+    white-space: nowrap;
+    background: #fff;
+    padding: 15px 0;
+    border-bottom: 1px solid #ebebeb;
+    margin: 0 16px;
+}
+
+.myot-items:last-child {
+    border: 0;
+}
+
+.myot-items a {
+    height: 42px;
+    border-radius: 6px;
+    border: solid 1px #999999;
+    background-color: #ffffff;
+    display: inline-block;
+    margin-right: 8px;
+}
+
+.myot-items a span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    font-size: 16px;
+    line-height: 1.33;
+    text-align: center;
+    color: #333333;
+}
+
+.myot-items a.active span {
+    font-weight: bold;
+}
+
+.myot-items a:last-child {
+    margin-right: 0;
+}
+
+.myot-items a.active {
+    border: solid 2px #007c92;
+}
+
+.myot-items.myot-size-4 a {
+    width: calc(20% - 9px) !important;
+
+}
+
+.myot-items.myot-size-3 a {
+    width: calc(33.3333% - 8px) !important;
+
+}
+
+.myot-items.myot-size-2 a {
+    width: calc(50% - 6px) !important;
+
+}
+
+.popup-container.pop-tarife-dty {
+    /* -webkit-backdrop-filter: blur(2px);
+    backdrop-filter: blur(2px); */
+    background-color: rgba(0, 0, 0, 0.6);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    width: 100%;
+    height: 100%;
+    padding-top: 16px;
+}
+
+.pop-tarife-dty .popup-content {
+    width: 100%;
+    max-width: 610px;
+    background: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.32);
+    padding: 20px;
+    padding-top: 32px;padding-bottom: 64px;
+}
+
+.pop-tarife-dty a.popup-close {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
+.pop-tarife-dty a.popup-close img {
+    width: 24px;
+    height: 24px;
+}
+
+.pop-tarife-dty .popup-content .popup-content-head {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.pop-tarife-dty .popup-content .popup-content-head p {
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1.1;
+    text-align: left;
+    color: #333333;
+}
+
+.pop-tarife-dty .popup-content .popup-content-infotext {
+    font-family: 'VodafoneRegular';
+    font-size: 18px;
+    line-height: 1.33;
+    text-align: left;
+    color: #333333;
+    margin: 0;
+    margin-bottom: 16px;
+}
+
+.pop-tarife-dty .popup-content .btn-cont {
+    width: 100%;
+    display: flex;
+    padding: 0;
+    margin-top: 30px;
+}
+.pop-tarife-dty .popup-content .btn-cont .button{
+    width: 100%;
+    max-width: unset;
+    display: block;
+    margin-right: 20px !important;
+    padding: 7px 4px;
+}
+.pop-tarife-dty .popup-content .btn-cont .button:last-child{
+    margin-right: 0 !important;
+}
+
+.tariff-detail-content .item {
+    margin: 16px 0;
+    padding: 0 16px;
+    border-radius: 6px;
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.16);
+    background-color: #fff;
+}
+
+.tariff-detail-content .item .accordion-vf {
+    font-size: 18px;
+    color: #333333;
+    width: 100%;
+    border: none;
+    transition: 0.4s;
+    padding: 12px 0px;
+    position: relative;
+    display: block;
+    min-height: 56px;
+    height: auto;
+    min-height: 46px;
+    padding-right: 29px;
+    background: #fff;
+    /* padding-left: 0; */
+}
+
+.tariff-detail-content .item .accordion-vf.active {
+    padding-bottom: 8px;
+}
+
+.tariff-detail-content .item .panel {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+
+    /* border-bottom: 1px solid #ccc; */
+}
+
+.tariff-detail-content .item .panel .panel-content {
+    /* margin: 16px; */
+    margin-top: 0;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    border-top: 1px solid #ebebeb;
+
+}
+
+.tariff-detail-content .item .panel a {
+    text-decoration: underline;
+}
+
+.tariff-detail-content .item .panel a.red-a {
+    color: #E60000;
+    text-decoration: none;
+}
+
+.tariff-detail-content .item .accordion-vf>img {
+    position: absolute;
+    right: -20px;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 32px;
+    height: 32px;
+}
+
+.tariff-detail-content .item .accordion-vf.active>img {
+    transform: translate(-50%, -50%) rotate(180deg);
+}
+
+.tariff-detail-content .item .panel p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.tariff-detail-content .item p.sss-phead {
+    font-family: VodafoneLight;
+    font-size: 28px;
+    line-height: 1.29;
+    color: #333333;
+    margin-bottom: 24px;
+}
+
+.tariff-detail-content .item .panel ol li,
+.tariff-detail-content .item .panel ul li {
+    margin-bottom: 7px;
+}
+
+.tariff-detail-content .item .panel a {
+    color: rgb(118, 40, 98)
+}
+
+.tariff-detail-content .acc-dty {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.tariff-detail-content .acc-dty .img-cont{
+    line-height: 0;
+}
+.tariff-detail-content .acc-dty span{
+    font-size: 14px;
+}
+.accordion-vf-empty{
+    font-size: 18px;
+    color: #333333;
+    width: 100%;
+    border: none;
+    transition: 0.4s;
+    padding: 12px 0px;
+    position: relative;
+    display: block;
+    min-height: 56px;
+    height: auto;
+    min-height: 46px;
+    padding-right: 29px;
+    background: #fff;
+    /* padding-left: 0; */
+}
+@media only screen and (max-width: 1060px){
+    .tarife-uygulama.v1v2 {
+        left: 39%;
+    }
+}
+@media only screen and (max-width: 970px){
+    .tarife-uygulama.v1v2 {
+        left: 33%;
+    }
+}
+@media only screen and (max-width: 755px){
+    .tarife-uygulama.v1v2 {
+        left: 40%;
+    }
+}
+
+@media only screen and (max-width: 675px){
+    .tarife-head .tarife-price-text {
+        font-size: 13px;
+    }
+    .btn-cont .button {
+        font-size: 16px;
+    }
+}
+@media only screen and (max-width: 639px) {
+    
+    .tarife-uygulama.v1v2 {
+        left: 36%;
+    }
+    .tarife-card {
+        max-width: 330px;
+        border-radius: 6px;
+        box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.16);
+        background-color: #ffffff;
+        margin-top: 0;
+        margin-bottom: 40px;
+    }
+
+    .myot-slct-block .myotslct-head {
+        margin-bottom: 7px;
+    }
+
+    .pop-tarife-dty .popup-content .button {
+        max-width: unset;
+    }
+
+    .myot-slct-block {
+        margin-bottom: 20px;
+    }
+
+    .myot-items a {
+        height: 46px;
+    }
+
+    .myot-items a span {
+        height: 44px;
+        font-size: 16px;
+    }
+
+    .myot-items.myot-size-4 a {
+        width: 73px;
+    }
+
+    .myot-items.myot-size-3 a {
+        width: 83px;
+    }
+    .pop-tarife-dty .popup-content {
+        bottom: 0;
+        height: auto;
+        top: unset;
+        left: 0;
+        transform: unset;
+        overflow-y: auto;
+        max-height: 90vh;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+        padding-bottom: 134px;
+    }
+    .pop-tarife-dty .popup-content .btn-cont {
+        width: 100%;
+        display: flex;
+        margin-top: 30px;
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        z-index: 1;
+        padding: 0 16px;
+        background: #fff;
+        flex-direction: column-reverse;
+        padding-bottom: 24px;
+        padding-top: 11px;
+    }
+    .pop-tarife-dty .popup-content .btn-cont .button {
+        margin: 0 !important;
+        margin-top: 10px !important;
+    }
+    .pop-tarife-dty .popup-content .btn-cont .button:last-child {
+        margin: 0 !important;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    .tarife-head .tarife-price-text {
+        font-size: 12px;
+    }
+    .tarife-uygulama.v1v2 {
+        left: 41%;
+    }
+    .btn-cont .button {
+        font-size: 16px;
+    }
+}
+
+
+
+
+
+
+

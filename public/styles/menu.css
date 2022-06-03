@@ -1,0 +1,4283 @@
+:focus {
+    outline: 0
+}
+strong {
+    font-family: 'VodafoneRegular' !important;
+    font-weight: 700
+}
+
+
+@media(min-width:1201px) {
+    .container {
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0 10px
+    }
+}
+
+
+
+.nav-top {
+    background: #4a4d4e
+}
+
+@media(min-width:0)and (max-width:640px) {
+    .nav-top {
+        display: none
+    }
+}
+
+@media(min-width:641px)and (max-width:970px) {
+    .nav-top {
+        display: none
+    }
+}
+
+.nav-top .menu {
+    list-style: none;
+    margin: 0
+}
+
+.nav-top .menu li {
+    float: left
+}
+
+.nav-top .menu a {
+    text-decoration: none;
+    font-size: 16px;
+    font-family: VodafoneLight
+}
+
+.nav-top .menu-left {
+    float: left;
+    padding: 0 0 0 60px
+}
+
+.nav-top .menu-left li {
+    padding: 0 20px
+}
+
+.nav-top .menu-left li a {
+    color: #ccc;
+    line-height: 29px;
+    margin-top: 3px
+}
+
+.nav-top .menu-left li.active,
+.nav-top .menu-left li:hover {
+    background: #fff
+}
+
+.nav-top .menu-left li.active a,
+.nav-top .menu-left li:hover a {
+    color: #4a4d4e
+}
+
+.nav-top .menu-right {
+    float: right;
+    margin-top: 3px;
+    margin-right: 10px
+}
+
+.nav-top .menu-right li {
+    padding: 0
+}
+
+.nav-top .menu-right li a {
+    color: #fff;
+    padding: 1px 10px;
+    line-height: 22px;
+    border-left: 1px solid #fff
+}
+
+.nav-top .menu-right li:first-child a {
+    border-left: 0 solid #fff
+}
+
+.navbar {
+    z-index: 10;
+    position: relative;
+    box-shadow: 0 3px 3px 0 rgba(0, 0, 0, .27);
+    background: #fff
+}
+
+.navbar:after {
+    content: " ";
+    display: block;
+    clear: both
+}
+
+.navbar .show-stick-link {
+    display: none
+}
+
+.navbar.stick {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #fff;
+    z-index: 2
+}
+
+.navbar.stick .show-stick-link img {
+    max-width: 30px
+}
+
+@media(min-width:641px) {
+    .navbar.stick .show-stick-link {
+        display: block
+    }
+}
+
+.navbar.stick .show-stick-link .origin {
+    display: block
+}
+
+.navbar.stick .show-stick-link .active,
+.navbar.stick .show-stick-link:hover .origin {
+    display: none
+}
+
+.navbar.stick .show-stick-link:hover .active {
+    display: block
+}
+
+.navbar #navbar ul a {
+    outline: none
+}
+
+.navbar #navbar ul a:hover {
+    color: #e60000
+}
+
+.navbar .activate {
+    display: none;
+    position: absolute;
+    cursor: pointer;
+    width: 100%;
+    height: 40px;
+    margin: 0 0 0 -15px;
+    opacity: 0
+}
+
+.navbar label {
+    display: block
+}
+
+@media(min-width:0)and (max-width:640px) {
+    .navbar {
+        height: 51px
+    }
+
+    .navbar label a {
+        pointer-events: none;
+        margin: 0 !important;
+        padding: 10px 0;
+        font-size: 20px !important
+    }
+
+    .navbar label a:after {
+        font-family: icomoon !important;
+        speak: none;
+        font-style: normal;
+        font-weight: 400;
+        font-variant: normal;
+        text-transform: none;
+        line-height: 1;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        content: "\E903" !important;
+        float: right;
+        top: 1px;
+        position: relative;
+        font-size: 23px;
+        right: 8px;
+        color: #e60000;
+        -webkit-transition: all .3s linear;
+        -moz-transition: all .3s linear;
+        -ms-transition: all .3s linear;
+        -o-transition: all .3s linear
+    }
+
+    .navbar .activate:checked~.drop-down {
+        max-height: 1000px;
+        padding: 0 20px 10px
+    }
+
+    .navbar .activate:checked~label a {
+        color: #e60000 !important
+    }
+
+    .navbar .activate:checked~label a:after {
+        -webkit-transform: rotateX(180deg);
+        -moz-transform: rotateX(180deg);
+        -ms-transform: rotateX(180deg);
+        -o-transform: rotateX(180deg)
+    }
+
+    .navbar .drop-down {
+        max-height: 0;
+        overflow: hidden
+    }
+
+    .navbar .drop-down li {
+        float: none !important
+    }
+
+    .navbar .drop-down {
+        -webkit-transform: translateZ(0);
+        transition: all .6s
+    }
+}
+
+@media(min-width:641px)and (max-width:970px) {
+    .navbar {
+        height: 60px
+    }
+
+    .navbar label a {
+        pointer-events: none;
+        margin: 0 !important;
+        padding: 10px 0;
+        font-size: 20px !important
+    }
+
+    .navbar label a:after {
+        font-family: icomoon !important;
+        speak: none;
+        font-style: normal;
+        font-weight: 400;
+        font-variant: normal;
+        text-transform: none;
+        line-height: 1;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        content: "\E903" !important;
+        position: absolute;
+        right: 32px;
+        top: 50%;
+        margin-top: -12px;
+        font-size: 23px;
+        color: #e60000;
+        -webkit-transition: all .3s linear;
+        -moz-transition: all .3s linear;
+        -ms-transition: all .3s linear;
+        -o-transition: all .3s linear
+    }
+
+    .navbar .activate:checked~.drop-down {
+        max-height: 1000px;
+        padding: 0 20px 10px
+    }
+
+    .navbar .activate:checked~label a {
+        color: #e60000 !important;
+        pointer-events: auto
+    }
+
+    .navbar .activate:checked~label a:after {
+        -webkit-transform: rotateX(180deg);
+        -moz-transform: rotateX(180deg);
+        -ms-transform: rotateX(180deg);
+        -o-transform: rotateX(180deg)
+    }
+
+    .navbar .drop-down {
+        max-height: 0;
+        overflow: hidden
+    }
+
+    .navbar .drop-down li {
+        float: none !important
+    }
+
+    .navbar .drop-down {
+        -webkit-transform: translateZ(0);
+        transition: all .3s
+    }
+}
+
+@media(min-width:0)and (max-width:640px) {
+    .navbar #navbar .list-nav-main {
+        position: absolute;
+        display: none;
+        width: calc(100% - 45px);
+        height: calc(100vh - 50px);
+        top: 50px;
+        right: 0;
+        overflow-y: auto;
+        background: hsla(0, 0%, 100%, .96);
+        padding: 0 0 0 15px;
+        margin: 0;
+        list-style: none
+    }
+
+    .navbar #navbar .list-nav-main .container {
+        padding: 0 !important
+    }
+
+    .navbar #navbar .list-nav-main ul {
+        padding: 0 0 0 15px;
+        margin: 0;
+        list-style: none;
+        box-sizing: border-box
+    }
+
+    .navbar #navbar .list-nav-main a {
+        padding: 15px 56px 15px 11px;
+        display: block;
+        font-size: 20px;
+        text-decoration: none;
+        color: #333;
+        position: relative
+    }
+
+    .navbar #navbar .list-nav-main a:after {
+        font-family: icomoon !important;
+        speak: none;
+        font-style: normal;
+        font-weight: 400;
+        font-variant: normal;
+        text-transform: none;
+        line-height: 1;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        content: "\E901";
+        position: absolute;
+        right: 32px;
+        top: 50%;
+        margin-top: -12px;
+        font-size: 23px;
+        color: #e60000;
+        -webkit-transition: all .3s linear;
+        -moz-transition: all .3s linear;
+        -ms-transition: all .3s linear;
+        -o-transition: all .3s linear
+    }
+}
+
+@media(min-width:641px)and (max-width:970px) {
+    .navbar #navbar .list-nav-main {
+        position: absolute;
+        display: none;
+        width: calc(100% - 45px);
+        height: calc(100vh - 59px);
+        max-width: 370px;
+        top: 59px;
+        right: 0;
+        overflow-y: auto;
+        background: hsla(0, 0%, 100%, .96);
+        padding: 0 0 0 15px;
+        margin: 0;
+        list-style: none
+    }
+
+    .navbar #navbar .list-nav-main .container {
+        padding: 0 !important
+    }
+
+    .navbar #navbar .list-nav-main ul {
+        padding: 0 0 0 15px;
+        margin: 0;
+        list-style: none;
+        box-sizing: border-box
+    }
+
+    .navbar #navbar .list-nav-main a {
+        padding: 15px 56px 15px 11px;
+        display: block;
+        font-size: 20px;
+        text-decoration: none;
+        color: #333;
+        position: relative
+    }
+
+    .navbar #navbar .list-nav-main a:after {
+        font-family: icomoon !important;
+        speak: none;
+        font-style: normal;
+        font-weight: 400;
+        font-variant: normal;
+        text-transform: none;
+        line-height: 1;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        content: "\E901";
+        position: absolute;
+        right: 32px;
+        top: 50%;
+        margin-top: -12px;
+        font-size: 23px;
+        color: #e60000;
+        -webkit-transition: all .3s linear;
+        -moz-transition: all .3s linear;
+        -ms-transition: all .3s linear;
+        -o-transition: all .3s linear
+    }
+}
+
+@media(min-width:971px) {
+    .navbar #navbar .list-nav-main {
+        position: static;
+        display: block;
+        width: auto;
+        height: auto;
+        top: auto;
+        right: auto;
+        padding-left: 0;
+        margin: 0;
+        border-left: 0;
+        border-bottom: 0;
+        padding-bottom: 0
+    }
+
+    .navbar #navbar .list-nav-main>li>label>a,
+    .navbar #navbar .list-nav-main ul a {
+        min-width: 100px
+    }
+}
+
+@media(min-width:0)and (max-width:640px) {
+    .navbar #navbar.active-menu .list-nav-main {
+        display: block
+    }
+}
+
+@media(min-width:641px)and (max-width:970px) {
+    .navbar #navbar.active-menu .list-nav-main {
+        display: block
+    }
+}
+
+@media(min-width:971px) {
+    .navbar #navbar .mobile-menu-button {
+        display: none
+    }
+
+    .navbar #navbar ul {
+        list-style: none;
+        float: left;
+        margin: 0;
+        padding: 0
+    }
+
+    .navbar #navbar ul a {
+        display: inherit;
+        color: #333;
+        text-decoration: none;
+        font-size: 24px;
+        line-height: 30px;
+        padding: 18px 20px;
+        text-align: center;
+        font-family: VodafoneLight;
+        box-sizing: border-box;
+        border-top: 3px solid transparent;
+        border-bottom: 3px solid transparent
+    }
+
+    .navbar #navbar ul .menu-row {
+        padding: 0 0 0 48px;
+        background: hsla(0, 0%, 100%, .9) !important
+    }
+
+    .navbar #navbar ul .menu-row>.container>li {
+        position: relative
+    }
+
+    .navbar #navbar ul li {
+        float: left;
+        margin: 0;
+        padding: 0
+    }
+
+    .navbar #navbar ul li.current-menu-item {
+        background: #fff
+    }
+
+    .navbar #navbar ul li:hover>a,
+    .navbar #navbar ul li:hover>label>a {
+        color: #e60000;
+        border-bottom: 3px solid #e60000
+    }
+
+    .navbar #navbar ul li:hover>ul {
+        visibility: visible;
+        opacity: 1;
+        z-index: 1;
+        transform: translateY(0);
+        transition-delay: 0s, 0s, .3s
+    }
+
+    .navbar #navbar ul>li:hover>label>a {
+        color: #e60000;
+        border-bottom: 3px solid #e60000
+    }
+
+    .navbar #navbar ul ul {
+        background: hsla(0, 0%, 100%, .9);
+        padding: 0;
+        visibility: hidden;
+        opacity: 0;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        transform: translateY(-2em);
+        z-index: -1;
+        transition: all .3s ease-in-out 0s, visibility 0s linear .3s, z-index 0s linear .01s
+    }
+
+    .navbar #navbar ul ul a {
+        line-height: 120%;
+        color: #333;
+        padding: 10px 15px;
+        border-bottom: 1px solid transparent !important
+    }
+
+    .navbar #navbar ul ul ul {
+        bottom: 0;
+        left: 0
+    }
+
+    .navbar #navbar ul ul ul a {
+        background: hsla(0, 0%, 100%, .9);
+        text-align: left
+    }
+
+    .navbar #navbar ul ul ul li {
+        float: none;
+        width: auto;
+        background: hsla(0, 0%, 100%, .7019607843137254);
+        position: relative;
+        text-align: left;
+        white-space: nowrap
+    }
+
+    .navbar #navbar ul ul ul li ul {
+        top: 0;
+        left: 100%
+    }
+
+    .navbar #navbar ul ul.drop-down {
+        background: transparent
+    }
+}
+
+.navbar .list-nav-left {
+    float: left !important
+}
+
+.navbar .list-nav-right {
+    float: right !important
+}
+
+@media(min-width:0)and (max-width:640px) {
+    .navbar .list-nav-right {
+        padding: 0;
+        margin: 0;
+        list-style: none
+    }
+
+    .navbar .list-nav-right li {
+        float: left;
+        margin: 0;
+        padding: 15px
+    }
+
+    .navbar .list-nav-right li.mobile-menu-button {
+        padding: 7px 0 0
+    }
+
+    .navbar .list-nav-right li a {
+        display: block;
+        color: #333;
+        text-decoration: none;
+        font-size: 20px;
+        line-height: 0;
+        padding: 0;
+        text-align: center
+    }
+
+    .navbar .list-nav-right li .navbar-toggle {
+        display: block;
+        color: #333;
+        text-decoration: none;
+        font-size: 14px;
+        padding: 12px;
+        text-align: center;
+        font-family: VodafoneLight;
+        border: 0;
+        width: 36px;
+        background: #fff;
+        height: 36px
+    }
+
+    .navbar .list-nav-right li .navbar-toggle .icon-menu {
+        position: relative;
+        top: 0;
+        left: -4px
+    }
+
+    .navbar .list-nav-right li .navbar-toggle.active-menu {
+        background: red
+    }
+
+    .navbar .list-nav-right li .navbar-toggle.active-menu .icon-menu {
+        padding: 5px;
+        color: #fff;
+        left: -8px;
+        font-size: 17px;
+        top: -2px
+    }
+
+    .navbar .list-nav-right li .navbar-toggle.active-menu .icon-menu:before {
+        content: "\E908" !important
+    }
+
+    .navbar .list-nav-right li.current-menu-item,
+    .navbar .list-nav-right li:hover {
+        background: #fff
+    }
+
+    .navbar .list-nav-right li:hover>a {
+        color: #e60000
+    }
+
+    .navbar .list-nav-right li:hover>ul {
+        display: block
+    }
+}
+
+@media(min-width:641px)and (max-width:970px) {
+    .navbar .list-nav-right {
+        padding: 0;
+        margin: 0;
+        list-style: none
+    }
+
+    .navbar .list-nav-right li {
+        float: left;
+        margin: 0;
+        padding: 16px
+    }
+
+    .navbar .list-nav-right li.mobile-menu-button {
+        padding: 7px 0 0
+    }
+
+    .navbar .list-nav-right li a {
+        display: block;
+        color: #333;
+        text-decoration: none;
+        font-size: 24px;
+        line-height: 0;
+        padding: 0;
+        text-align: center
+    }
+
+    .navbar .list-nav-right li .navbar-toggle {
+        display: block;
+        color: #333;
+        text-decoration: none;
+        font-size: 17px;
+        padding: 12px;
+        text-align: center;
+        font-family: VodafoneLight;
+        border: 0;
+        width: 44px;
+        background: #fff;
+        height: 44px
+    }
+
+    .navbar .list-nav-right li .navbar-toggle .icon-menu {
+        position: relative;
+        top: 1px;
+        left: -2px
+    }
+
+    .navbar .list-nav-right li .navbar-toggle.active-menu {
+        background: red
+    }
+
+    .navbar .list-nav-right li .navbar-toggle.active-menu .icon-menu {
+        padding: 5px;
+        color: #fff;
+        left: -8px;
+        font-size: 24px;
+        top: -2px
+    }
+
+    .navbar .list-nav-right li .navbar-toggle.active-menu .icon-menu:before {
+        content: "\E908" !important
+    }
+
+    .navbar .list-nav-right li.current-menu-item,
+    .navbar .list-nav-right li:hover {
+        background: #fff
+    }
+
+    .navbar .list-nav-right li:hover>a {
+        color: #e60000
+    }
+
+    .navbar .list-nav-right li:hover>ul {
+        display: block
+    }
+}
+
+@media(min-width:971px) {
+    .navbar .list-nav-right>li>a {
+        line-height: 0 !important;
+        padding: 19px 20px !important;
+        font-size: 28px !important
+    }
+}
+
+.navbar .navbar-logo {
+    float: left
+}
+
+.navbar .navbar-logo a {
+    text-decoration: none
+}
+
+@media(min-width:0)and (max-width:640px) {
+    .navbar .navbar-logo a {
+        font-size: 35px;
+        display: inline-block;
+        line-height: 29px;
+        margin: 7px 0 0
+    }
+}
+
+@media(min-width:641px)and (max-width:970px) {
+    .navbar .navbar-logo a {
+        font-size: 48px;
+        display: inline-block;
+        line-height: 29px;
+        margin: 5px 0 0
+    }
+}
+
+@media(min-width:971px) {
+    .navbar .navbar-logo a {
+        font-size: 48px;
+        margin: 12px 10px 12px 0;
+        display: inline-block;
+        line-height: 37px
+    }
+}
+
+.icon-smartphone2:before {
+    content: "\E916"
+}
+
+.icon-wifi:before {
+    content: "\E917"
+}
+
+.icon-basket:before {
+    content: "\E918"
+}
+
+.icon-drawing-1:before {
+    content: "\E919"
+}
+
+.icon-phone:before {
+    content: "\E900"
+}
+
+.icon-arrow-forward:before {
+    content: "\E901"
+}
+
+.icon-arrow-back:before {
+    content: "\E902"
+}
+
+.icon-arrow-down:before {
+    content: "\E903"
+}
+
+.icon-uniE904:before {
+    content: "\E904"
+}
+
+.icon-uniE905:before {
+    content: "\E905"
+}
+
+.icon-arrow-up:before {
+    content: "\E906"
+}
+
+.icon-menu:before {
+    content: "\E907"
+}
+
+.icon-close:before {
+    content: "\E908"
+}
+
+.icon-comment:before {
+    content: "\E909"
+}
+
+.icon-briefcase:before {
+    content: "\E90A"
+}
+
+.icon-question:before {
+    content: "\E90C"
+}
+
+.icon-cart1:before {
+    content: "\E90D"
+}
+
+.icon-file:before {
+    content: "\E90E"
+}
+
+.icon-smartphone:before {
+    content: "\E90F"
+}
+
+.icon-phone-information:before {
+    content: "\E90B"
+}
+
+.icon-antenna:before {
+    content: "\E910"
+}
+
+.icon-person:before {
+    content: "\E911"
+}
+
+.icon-search:before {
+    content: "\E912"
+}
+
+.icon-information:before {
+    content: "\E913"
+}
+
+.icon-download:before {
+    content: "\E914"
+}
+
+.icon-personal-screen:before {
+    content: "\E915"
+}
+
+.icon-cart:before {
+    content: "\E93A"
+}
+
+.icon-facebook2:before {
+    content: "\EA91"
+}
+
+.icon-instagram:before {
+    content: "\EA92"
+}
+
+.icon-twitter:before {
+    content: "\EA96"
+}
+
+.icon-youtube:before {
+    content: "\EA9D"
+}
+
+.icon-linkedin:before {
+    content: "\EAC9"
+}
+
+.icon-linkedin2:before {
+    content: "\EACA"
+}
+
+.icon-arrow-up2:before {
+    content: "\EA3A"
+}
+
+.icon-arrow-right2:before {
+    content: "\EA3C"
+}
+
+.icon-arrow-down2:before {
+    content: "\EA3E"
+}
+
+.icon-arrow-left2:before {
+    content: "\EA40"
+}
+
+header.red_menu .top-header .flex ul li.active {
+    background-color: #000
+}
+
+header.red_menu .top-header .flex ul li.active a {
+    color: #ccc
+}
+
+header.red_menu .top-header .flex ul li a:hover {
+    background-color: #fff;
+    color: #000
+}
+
+header.red_menu .top-header .flex ul li a {
+    color: #ccc
+}
+
+header.red_menu .menu .flex .right .basket-container .basket {
+    color: #fff
+}
+
+header.red_menu .menu .flex .left .menu-flex .menu-mobil-container .menu-container ul li a {
+    padding: 16px 12px
+}
+
+header.corporate_menu .menu .flex .left .menu-flex .menu-mobil-container .menu-container ul li a {
+    padding: 18px 16px
+}
+
+@media screen and (max-width:1199px) {
+    header.corporate_menu .menu .flex .left .menu-flex .menu-mobil-container .menu-container ul li a {
+        font-size: 20px;
+        padding: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border: 0
+    }
+
+    header.corporate_menu .menu .flex .left .menu-flex .menu-mobil-container .menu-container ul li a:hover {
+        border: 0
+    }
+}
+
+@media screen and (max-width:1199px) {
+    header.red_menu .menu .flex .left .menu-flex .menu-mobil-container .menu-container ul li a {
+        font-size: 20px;
+        padding: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border: 0
+    }
+
+    header.red_menu .menu .flex .left .menu-flex .menu-mobil-container .menu-container ul li a:hover {
+        border: 0
+    }
+}
+
+header.red_menu .menu .flex .left .menu-flex .menu-mobil-container .menu-container ul .submenu li a:hover {
+    color: #e60000
+}
+
+header.red_menu,
+header.red_menu .menu {
+    background: #000
+}
+
+@media screen and (max-width:1200px) {
+    header.red_menu .menu .flex .left .menu-flex .menu-mobil-container .menu-container ul li a {
+        color: #000 !important
+    }
+}
+
+header.red_menu {
+    background: #000
+}
+
+@media screen and (max-width:480px) {
+    header.red_menu {
+        height: 59px
+    }
+}
+
+header.red_menu .top-header {
+    background-color: #4a4d4e
+}
+
+@media screen and (max-width:480px) {
+    header.red_menu .logo_extra img {
+        height: 26px;
+        margin: 0 0 0 12px;
+        display: block
+    }
+}
+
+header.red_menu .menu {
+    background: #000
+}
+
+@media screen and (max-width:480px) {
+    header.red_menu .menu .flex {
+        height: 59px
+    }
+}
+
+@media screen and (max-width:480px) {
+    header.red_menu .menu .flex .left {
+        align-items: center
+    }
+}
+
+@media screen and (max-width:480px) {
+    header.red_menu .menu .flex .left .logo img {
+        width: 32px;
+        height: 32px
+    }
+}
+
+header.red_menu .menu .flex .left .menu-flex .menu-mobil-container .menu-container ul .submenu li a {
+    color: #000
+}
+
+header.red_menu .menu .flex .left .menu-flex .menu-mobil-container .menu-container ul li a,
+header.red_menu .menu .flex .right .mobile-menu-button {
+    color: #fff
+}
+
+header.red_menu .menu .flex .right .mobile-menu-button.active {
+    background: #000;
+    color: #fff
+}
+
+header.red_menu .menu .flex .right .show-stick-link a i {
+    background: url(https://www.vodafone.com.tr/assets/dist/images/af16d80139bd6bc248daefe18dde77d0.svg)
+}
+
+header.red_menu .menu .flex .right .basket-container {
+    margin-right: 5px
+}
+
+@media screen and (max-width:480px) {
+    header.red_menu .menu .flex .right .basket-container .basket {
+        margin: 0
+    }
+}
+
+header.red_menu .menu .flex .right .basket-container .basket .icon-basket {
+    color: #fff
+}
+
+header.red_menu .menu .flex .right .profile a {
+    background: #000;
+    color: #fff
+}
+
+header.red_menu .menu .flex .right .search-bar {
+    color: #fff
+}
+
+header.freezone .menu {
+    background-color: #e60000;
+    color: #fff
+}
+
+header.freezone .menu .flex .left .menu-flex .menu-mobil-container .menu-container ul li a {
+    color: #fff;
+    padding: 18px 10px !important
+}
+
+header.freezone .menu .flex .left .menu-flex .menu-mobil-container .menu-container ul li a:hover {
+    border-bottom: none
+}
+
+header.freezone .menu .flex .left .menu-flex .menu-mobil-container .menu-container ul .submenu li a {
+    color: #000
+}
+
+header.freezone .menu .flex .right .basket-container .basket .icon-basket {
+    color: #fff;
+    background-image: url(https://cdn.vodafone.com.tr/banneradmin/shopping-white.svg)
+}
+
+header.freezone .menu .flex .right .basket-container .basket .icon-basket:hover,
+header.freezone .menu .flex .right .search-bar .icon-search,
+header.freezone .menu .flex .right .search-bar .icon-search:hover {
+    color: #fff
+}
+
+header.freezone .menu .flex .right .profile a {
+    background: #af0f0f;
+    height: 74px;
+    color: #fff
+}
+
+header.freezone .menu .flex .right .profile a .icon-person {
+    color: #fff
+}
+
+header.freezone .menu .flex .right .profile a:hover {
+    border-bottom-color: #af0f0f
+}
+
+.header .navbar,
+.header .stick {
+    box-shadow: none
+}
+
+.header .stick {
+    box-shadow: 0 3px 3px 0 rgba(0, 0, 0, .27);
+    -webkit-box-shadow: 0 3px 3px 0 rgba(0, 0, 0, .27);
+    -moz-box-shadow: 0 3px 3px 0 rgba(0, 0, 0, .27)
+}
+
+header {
+    background: #fff;
+    width: 100%;
+    display: block
+}
+
+header .container {
+    overflow: visible
+}
+
+@media screen and (max-width:960px) {
+    header .container {
+        padding: 0
+    }
+}
+
+header .top-header {
+    background: #4a4d4e
+}
+
+header .top-header .flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+}
+
+header .top-header .flex .left {
+    margin: 0 0 0 60px
+}
+
+header .top-header .flex ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0
+}
+
+header .top-header .flex ul li {
+    transition: background .3s
+}
+
+header .top-header .flex ul li a {
+    color: #ccc;
+    font-family: VodafoneLight;
+    font-size: 16px;
+    line-height: 29px;
+    padding: 0 20px;
+    transition: color .3s
+}
+
+header .top-header .flex ul li.active {
+    background: #fff
+}
+
+header .top-header .flex ul li.active a {
+    color: #4a4d4e
+}
+
+header .top-header .flex .right {
+    margin: 0 20px 0 0;
+    position: relative
+}
+
+header .top-header .flex .right ul li a {
+    padding: 0 10px;
+    color: #fff;
+    display: inline
+}
+
+header .top-header .flex .right ul li.drop a {
+    border-left: 1px solid #fff
+}
+
+header .top-header .flex .right ul li.drop a:after {
+    border: solid #e60000;
+    border-width: 0 2px 2px 0;
+    pointer-events: none;
+    margin-top: 12px;
+    float: right;
+    transform: translateY(-60%) rotate(45deg);
+    width: 10px;
+    height: 10px;
+    content: "";
+    box-sizing: inherit
+}
+
+header .top-header .flex .right ul li.drop.opened a:after {
+    transform: translateY(-22%) rotate(225deg)
+}
+
+header .top-header .flex .right ul li.drop .dropdown {
+    position: absolute;
+    background: #fff;
+    z-index: 1000;
+    min-width: 210px;
+    right: 0;
+    display: none;
+    z-index: 100000
+}
+
+header .top-header .flex .right ul li.drop .dropdown.active,
+header .top-header .flex .right ul li.drop .dropdown ul {
+    display: block
+}
+
+header .top-header .flex .right ul li.drop .dropdown ul li a {
+    color: #4a4d4e;
+    padding: 20px 25px;
+    line-height: 22px;
+    display: block;
+    text-align: left;
+    font-weight: 600;
+    border-bottom: 1px solid #ddd;
+    transition: all .3s
+}
+
+header .top-header .flex .right ul li.drop .dropdown ul li a:after {
+    display: none
+}
+
+header .top-header .flex .right ul li.drop .dropdown ul li a:hover {
+    background: #f9f9f9;
+    color: #e60000
+}
+
+header .top-header .flex .right ul li.drop .dropdown ul li:last-child a {
+    border: 0
+}
+
+header .menu {
+    display: block;
+    width: 100%;
+    background: #fff;
+    z-index: 1000;
+    position: relative;
+    transition: all .3s;
+    height: inherit
+}
+
+header .menu.fixed {
+    box-shadow: 0 3px 3px 0 rgba(0, 0, 0, .27);
+    -webkit-box-shadow: 0 3px 3px 0 rgba(0, 0, 0, .27);
+    -moz-box-shadow: 0 3px 3px 0 rgba(0, 0, 0, .27);
+    position: fixed;
+    top: 0
+}
+
+header .menu .flex {
+    display: flex;
+    justify-content: space-between
+}
+
+header .menu .flex .left {
+    display: flex
+}
+
+header .menu .flex .left .logo {
+    font-size: 48px;
+    line-height: 37px;
+    margin: 12px 10px 12px 0
+}
+header .menu .flex .left .logo svg{
+    width: 48px;
+    height: 48px;
+}
+header .menu .flex .left .logo span:before {
+    content: "\E904";
+    color: #e60000
+}
+
+header .menu .flex .left .menu-flex .menu-mobil-container {
+    display: flex
+}
+
+header .menu .flex .left .menu-flex .menu-mobil-container .menu-container .sub-list-element:hover>a {
+    color: #e60000
+}
+
+header .menu .flex .left .menu-flex .menu-mobil-container .menu-container:hover>ul>li>a {
+    color: #e60000;
+    border-bottom-color: #e60000
+}
+
+header .menu .flex .left .menu-flex .menu-mobil-container .menu-container ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0
+}
+
+header .menu .flex .left .menu-flex .menu-mobil-container .menu-container ul li a {
+    color: #333;
+    font-size: 24px;
+    line-height: 30px;
+    padding: 18px 19px;
+    font-family: VodafoneLight;
+    display: block;
+    box-sizing: inherit;
+    word-wrap: break-word;
+    font-weight: 400;
+    border-top: 3px solid transparent;
+    border-bottom: 3px solid transparent;
+    z-index: 1000
+}
+
+header .menu .flex .left .menu-flex .menu-mobil-container .menu-container ul li a.hover-active,
+header .menu .flex .left .menu-flex .menu-mobil-container .menu-container ul li a:hover {
+    color: #e60000;
+    border-bottom-color: #e60000
+}
+
+header .menu .flex .left .menu-flex .menu-mobil-container .menu-container ul li:hover {
+    z-index: 1
+}
+
+header .menu .flex .left .menu-flex .menu-mobil-container .menu-container ul .submenu {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 73px;
+    width: 100%;
+    background: #fff !important;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    margin-top: -1px;
+    visibility: hidden;
+    opacity: 0;
+    z-index: -1;
+    transform: translateY(-2em);
+    transition: all .3s ease-in-out 0s, visibility 0s linear .3s, z-index 0s linear .01s
+}
+
+header .menu .flex .left .menu-flex .menu-mobil-container .menu-container ul .submenu ul {
+    margin: 0 0 0 64px
+}
+
+header .menu .flex .left .menu-flex .menu-mobil-container .menu-container ul .submenu ul li a {
+    padding: 10px 15px;
+    line-height: 28px;
+    border-bottom: transparent !important
+}
+
+header .menu .flex .left .menu-flex .menu-mobil-container .menu-container ul .submenu ul li .sub {
+    position: absolute;
+    display: block;
+    visibility: hidden;
+    opacity: 0;
+    z-index: -1;
+    transform: translateY(-2em);
+    transition: all .3s ease-in-out 0s, visibility 0s linear .3s, z-index 0s linear .01s
+}
+
+header .menu .flex .left .menu-flex .menu-mobil-container .menu-container ul .submenu ul li .sub ul {
+    display: block;
+    margin: 0;
+    background: #fff
+}
+
+header .menu .flex .left .menu-flex .menu-mobil-container .menu-container ul .submenu ul li .sub ul li {
+    position: relative
+}
+
+header .menu .flex .left .menu-flex .menu-mobil-container .menu-container ul .submenu ul li .sub ul li .sub-item ul {
+    position: absolute;
+    top: 0;
+    display: table;
+    left: 100%;
+    width: 100%;
+    transform: translateY(-2em);
+    transition: all .3s ease-in-out 0s, visibility 0s linear .3s, z-index 0s linear .01s;
+    z-index: -1;
+    opacity: 0;
+    visibility: hidden;
+    background: #fff
+}
+
+header .menu .flex .left .menu-flex .menu-mobil-container .menu-container ul .submenu ul li .sub ul li .sub-item ul li {
+    white-space: nowrap
+}
+
+header .menu .flex .left .menu-flex .menu-mobil-container .menu-container ul .submenu ul li .sub ul li .sub2 {
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    z-index: -1;
+    transform: translateY(-2em);
+    transition: all .3s ease-in-out 0s, visibility 0s linear .3s, z-index 0s linear .01s;
+    top: 0;
+    display: table;
+    left: 100%;
+    width: 100%
+}
+
+header .menu .flex .left .menu-flex .menu-mobil-container .menu-container ul .submenu ul li .sub ul li:hover .sub2,
+header .menu .flex .left .menu-flex .menu-mobil-container .menu-container ul .submenu ul li .sub ul li:hover .sub-item ul,
+header .menu .flex .left .menu-flex .menu-mobil-container .menu-container ul .submenu ul li:hover .sub {
+    visibility: visible;
+    opacity: 1;
+    z-index: 1;
+    transform: translateY(0);
+    transition-delay: 0s, 0s, .3s
+}
+
+header .menu .flex .left .menu-flex .menu-mobil-container .menu-container ul:hover .submenu {
+    visibility: visible;
+    opacity: 1;
+    z-index: 0;
+    transform: translateY(0);
+    transition-delay: 0s, 0s, .3s
+}
+
+header .menu .flex .left .menu-flex .menu-mobil-container .mobil-footer {
+    display: none
+}
+
+header .menu .flex .right,
+header .menu .flex .right .flex {
+    display: flex;
+    align-items: center
+}
+
+header .menu .flex .right .search-bar {
+    color: #333;
+    font-size: 28px;
+    border-top: 3px solid transparent;
+    border-bottom: 3px solid transparent;
+    padding: 12px 5px;
+    transition: all .3s;
+    margin-right: 15px;
+    display: flex;
+    align-items: center
+}
+
+header .menu .flex .right .search-bar svg {
+    transition: color .3s
+}
+
+header .menu .flex .right .search-bar svg  {
+    width: 28px;
+    height: 28px;
+}
+
+header .menu .flex .right .search-bar:hover {
+    border-bottom-color: #e60000
+}
+
+header .menu .flex .right .search-bar:hover svg {
+    color: #e60000
+}
+
+header .menu .flex .right .news-notification {
+    margin: 0 15px 0 0;
+    position: relative
+}
+
+header .menu .flex .right .news-notification .news {
+    display: flex;
+    height: 73px;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 3px solid transparent;
+    width: auto;
+    position: relative
+}
+
+header .menu .flex .right .news-notification .news:hover {
+    border-bottom-color: #e60000
+}
+
+header .menu .flex .right .news-notification .news .icon-news {
+    background: url(https://www.vodafone.com.tr/assets/dist/images/3ddbb441e342e459800bc3b257b2f224.svg) no-repeat 5px 5px;
+    width: 40px;
+    height: 40px;
+    display: block
+}
+
+header .menu .flex .right .news-notification .news .count {
+    position: absolute;
+    top: 10px;
+    right: 0;
+    background: #e60000;
+    color: #fff;
+    width: 23px;
+    height: 23px;
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    padding: 2px;
+    font-size: 15px;
+    cursor: pointer;
+    text-align: center;
+    font-family: VodafoneRegular;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+header .menu .flex .right .news-notification .news-popup {
+    position: absolute;
+    width: 380px;
+    background: #fff;
+    margin: 10px 0 0;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    box-shadow: 0 0 20px #666;
+    -webkit-box-shadow: 0 0 20px #666;
+    -moz-box-shadow: 0 0 20px #666;
+    visibility: hidden;
+    opacity: 0;
+    z-index: -1;
+    left: -40px
+}
+
+header .menu .flex .right .news-notification .news-popup:before {
+    content: "";
+    height: 10px;
+    width: 10px;
+    display: block;
+    position: absolute;
+    top: -20px;
+    left: 50px;
+    border: 10px solid transparent;
+    border-bottom-color: #fff;
+    box-sizing: inherit;
+    z-index: 100
+}
+
+header .menu .flex .right .news-notification .news-popup .news-header {
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+    padding: 17px 15px;
+    color: #333;
+    font-family: VodafoneRegular;
+    border-bottom: 1px solid #ccc
+}
+
+header .menu .flex .right .news-notification .news-popup .news-header h2 {
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 23px;
+    margin-bottom: 0;
+    font-family: VodafoneRegular
+}
+
+header .menu .flex .right .news-notification .news-popup .news-header .news-close {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 45px;
+    color: #333;
+    display: block;
+    transition: .3s;
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    font-family: VodafoneRegular;
+    line-height: 30px;
+    cursor: pointer
+}
+
+header .menu .flex .right .news-notification .news-popup .news-body ul {
+    max-height: 430px;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    list-style: none;
+    margin-bottom: 0
+}
+
+@media screen and (max-width:1280px) {
+    header .menu .flex .right .news-notification .news-popup .news-body ul {
+        max-height: 330px
+    }
+}
+
+header .menu .flex .right .news-notification .news-popup .news-body ul li {
+    min-height: 100px;
+    padding: 10px 15px 5px;
+    border-bottom: 1px solid #ddd
+}
+
+header .menu .flex .right .news-notification .news-popup .news-body ul li.newsRead a span {
+    font-weight: 500
+}
+
+header .menu .flex .right .news-notification .news-popup .news-body ul li:last-child {
+    border-bottom: 0
+}
+
+header .menu .flex .right .news-notification .news-popup .news-body ul li a {
+    display: flex;
+    align-items: normal
+}
+
+header .menu .flex .right .news-notification .news-popup .news-body ul li a .news-image {
+    width: 100px;
+    min-width: 100px
+}
+
+header .menu .flex .right .news-notification .news-popup .news-body ul li a .news-image img {
+    max-width: 100%;
+    height: 60px;
+    width: auto;
+    display: block
+}
+
+header .menu .flex .right .news-notification .news-popup .news-body ul li a span {
+    font-size: 17px;
+    line-height: 22px;
+    font-family: VodafoneRegular;
+    font-weight: 600;
+    color: #333
+}
+
+header .menu .flex .right .news-notification .news-popup .news-body ul li .news-alert {
+    font-family: VodafoneRegular;
+    line-height: 22px;
+    display: flex;
+    align-items: center
+}
+
+header .menu .flex .right .news-notification .news-popup .news-body ul li .news-alert div {
+    max-width: 246px
+}
+
+header .menu .flex .right .news-notification .news-popup .news-body ul li .news-alert div span {
+    font-size: 16px;
+    font-weight: 700;
+    margin: 0 0 10px;
+    display: block
+}
+
+header .menu .flex .right .news-notification .news-popup .news-body ul li .news-alert div p {
+    font-size: 16px;
+    font-weight: 400
+}
+
+header .menu .flex .right .news-notification .news-popup .news-body ul li .news-alert a {
+    font-size: 14px;
+    background: #e60000;
+    color: #fff;
+    padding: 5px 15px;
+    border-radius: 9px;
+    -webkit-border-radius: 9px;
+    -moz-border-radius: 9px;
+    margin: 20px 0 0
+}
+
+header .menu .flex .right .news-notification .news-popup .news-body ul li .news-alert a:hover {
+    background: #900
+}
+
+header .menu .flex .right .news-notification .news-popup .news-body ul li.read a span {
+    font-weight: 400
+}
+
+header .menu .flex .right .news-notification .news-popup .news-body ul li.tariff-redirect {
+    display: none
+}
+
+header .menu .flex .right .news-notification .news-popup .news-body ul li.tariff-redirect.active {
+    display: block
+}
+
+header .menu .flex .right .news-notification .news-popup .news-footer a {
+    padding: 18px 20px;
+    border-top: 1px solid #ccc;
+    border-bottom: 3px solid transparent;
+    text-align: center;
+    display: block;
+    color: #e60000;
+    font-family: VodafoneLight;
+    font-weight: 600;
+    line-height: 5px
+}
+
+header .menu .flex .right .news-notification .news-popup.news-open {
+    -webkit-animation-name: fadeInDown;
+    animation-name: fadeInDown;
+    -webkit-animation: fadeInDown .35s ease-in both;
+    animation: fadeInDown .35s ease-in both
+}
+
+@-webkit-keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        visibility: hidden;
+        transform: translate3d(0, -10%, 0)
+    }
+
+    to {
+        opacity: 1;
+        visibility: visible;
+        z-index: 100000;
+        display: block;
+        transform: none
+    }
+}
+
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        visibility: hidden;
+        transform: translate3d(0, -10%, 0)
+    }
+
+    to {
+        opacity: 1;
+        visibility: visible;
+        transform: none
+    }
+}
+
+header .menu .flex .right .news-notification .news-popup.news-close {
+    -webkit-animation-name: fadeOutUp;
+    animation-name: fadeOutUp;
+    -webkit-animation: fadeOutUp .35s ease-in both;
+    animation: fadeOutUp .35s ease-in both
+}
+
+@-webkit-keyframes fadeOutUp {
+    0% {
+        opacity: 1;
+        visibility: visible;
+        display: block;
+        transform: none
+    }
+
+    to {
+        opacity: 0;
+        visibility: hidden;
+        transform: translate3d(0, -10%, 0)
+    }
+}
+
+@keyframes fadeOutUp {
+    0% {
+        opacity: 1;
+        visibility: visible;
+        display: block;
+        transform: none
+    }
+
+    to {
+        opacity: 0;
+        visibility: hidden;
+        transform: translate3d(0, -10%, 0)
+    }
+}
+
+header .menu .flex .right .profile a {
+    display: flex;
+    width: 100%;
+    height: 73px;
+    border-bottom: 3px solid transparent;
+    align-items: center;
+    font-size: 28px;
+    font-family: VodafoneLight;
+    padding: 19px 20px;
+    background: #f4f4f4;
+    width: 250px;
+    color: #333
+}
+header .menu .flex .right .profile a .icon {
+    stroke-width: .2em;
+}
+
+header .menu .flex .right .profile a .icon-person:before {
+    content: "\E911"
+}
+
+header .menu .flex .right .profile a .profile-login {
+    font-size: 18px;
+    margin: 0 0 0 20px;
+    font-family: VodafoneLight;
+    font-weight: 600
+}
+
+header .menu .flex .right .profile a div {
+    display: flex;
+    flex-direction: column
+}
+
+header .menu .flex .right .profile a div span {
+    font-size: 18px;
+    margin: 7px 0 7px 20px;
+    font-family: VodafoneLight;
+    font-weight: 600
+}
+
+header .menu .flex .right .profile a div span:last-child {
+    font-size: 13px;
+    margin: 0 0 0 20px
+}
+
+header .menu .flex .right .profile a div span.corporate-profile {
+    font-size: 18px;
+    margin: 0 0 0 20px
+}
+
+header .menu .flex .right .profile a:hover {
+    border-bottom-color: #e60000
+}
+
+header .menu .flex .right .basket-container {
+    position: relative
+}
+
+header .menu .flex .right .basket-container .basket {
+    padding: 13px 0 14px;
+    font-size: 33px;
+    border-top: 3px solid transparent;
+    border-bottom: 3px solid transparent;
+    display: flex;
+    margin-right: 20px;
+    width: 40px;
+    justify-content: center;
+    align-items: center;
+    color: #000
+}
+header .menu .flex .right .basket-container .basket svg{
+    stroke-width: 0.8px;
+    width: 41px;
+    height: 38px;
+}
+header .menu .flex .right .basket-container .basket:hover {
+    border-bottom-color: #e60000;
+    color: #e60000
+}
+
+header .menu .flex .right .basket-container .basket .icon-cart1 {
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+header .menu .flex .right .basket-container .basket .basket-count {
+    position: absolute;
+    top: 10px;
+    right: 9px;
+    background: #e60000;
+    color: #fff;
+    width: 23px;
+    height: 23px;
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    padding: 2px;
+    font-size: 15px;
+    cursor: pointer;
+    text-align: center;
+    font-family: VodafoneRegular;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+header .menu .flex .right .mobile-menu-button {
+    width: 44px;
+    height: 44px;
+    color: #333;
+    font-family: VodafoneLight;
+    border: 0;
+    padding: 12px;
+    display: none;
+    font-size: 18px
+}
+
+header .menu .flex .right .mobile-menu-button span {
+    display: block;
+    text-align: center
+}
+
+header .menu .flex .right .mobile-menu-button span:before {
+    content: "\E907"
+}
+
+header .menu .flex .right .mobile-menu-button.active {
+    background: #e60000;
+    color: #fff
+}
+
+header .menu .flex .right .mobile-menu-button.active span:before {
+    content: "\E908"
+}
+
+header .menu .flex .right .show-stick-link {
+    opacity: 0;
+    visibility: hidden;
+    transition: all .3s;
+    display: none
+}
+
+header .menu .flex .right .show-stick-link.fixed {
+    visibility: visible;
+    opacity: 1;
+    display: flex
+}
+
+header .menu .flex .right .show-stick-link a {
+    padding: 17px 10px;
+    display: block;
+    border-top: 3px solid transparent;
+    border-bottom: 3px solid transparent;
+    font-size: 28px
+}
+
+header .menu .flex .right .show-stick-link a i {
+    background: url(https://www.vodafone.com.tr/assets/v2/images/fatura-ode.svg) no-repeat;
+    background-size: cover;
+    display: block;
+    width: 30px;
+    height: 30px;
+    transition: all .3s
+}
+
+header .menu .flex .right .show-stick-link a i.tl-icon {
+    background: url(https://www.vodafone.com.tr/assets/v2/images/tl-yukleme.svg) no-repeat;
+    background-size: cover
+}
+
+header .menu .flex .right .show-stick-link a:hover i:hover {
+    background: url(https://www.vodafone.com.tr/assets/v2/images/fatura-ode-kirmizi.svg) no-repeat;
+    background-size: cover
+}
+
+header .menu .flex .right .show-stick-link a:hover i:hover.tl-icon {
+    background: url(https://www.vodafone.com.tr/assets/v2/images/tl-yukleme-kirmizi.svg) no-repeat;
+    background-size: cover
+}
+
+header .search-container {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #333;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -100;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .3s;
+    z-index: 1000
+}
+
+header .search-container.active {
+    visibility: visible;
+    opacity: 1
+}
+
+header .search-container .search-close {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 24px;
+    color: #fff;
+    display: block;
+    transition: .3s;
+    position: absolute;
+    top: 45px;
+    right: 45px;
+    font-family: VodafoneRegular;
+    z-index: 1000
+}
+
+header .search-container .search-close .icon-close {
+    font-weight: 600
+}
+
+header .search-container .search-close .icon-close:before {
+    content: "\E908"
+}
+
+header .search-container .flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    color: #fff
+}
+
+header .search-container .flex h2 {
+    font-size: 44px;
+    line-height: 36px;
+    margin: 20px 0 35px;
+    font-family: VodafoneLight;
+    font-weight: 300
+}
+
+header .search-container .flex form {
+    width: 580px
+}
+
+header .search-container .flex form .flex-container {
+    display: flex
+}
+
+header .search-container .flex form .flex-container input {
+    background-color: #fff;
+    border: 1px solid #999;
+    border-radius: 0;
+    box-shadow: inset 1px 3px 4px 0 rgba(0, 0, 0, .1);
+    color: #666;
+    display: block;
+    position: relative;
+    width: 100%;
+    padding: 14px 20px 12px;
+    height: 50px;
+    font-size: 18px;
+    font-family: VodafoneRegular;
+    min-width: 50px
+}
+
+header .search-container .flex form .flex-container button {
+    width: 50px;
+    height: 50px;
+    display: block;
+    background-color: #666;
+    border: 1px solid transparent;
+    font-size: 20px;
+    cursor: pointer;
+    text-align: center;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    color: #fff;
+    min-width: 50px;
+    transition: background-color .3s;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+header .search-container .flex form .flex-container button:hover {
+    background-color: #e60000
+}
+
+header .search-container .flex form .flex-container button span:before {
+    content: "\E912"
+}
+
+header .search-container .flex h3 {
+    font-size: 36px;
+    line-height: 36px;
+    margin: 50px 0 35px;
+    font-family: VodafoneLight;
+    font-weight: 300
+}
+
+header .search-container .search-list {
+    margin: 0;
+    text-align: center;
+    display: block
+}
+
+header .search-container .search-list a {
+    background: #ccc;
+    border-radius: 3px;
+    color: #333;
+    display: inline-block;
+    font-size: 20px;
+    line-height: normal;
+    margin: 10px;
+    padding: 13px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-family: VodafoneRegular;
+    word-wrap: break-word;
+    transition: all .3s
+}
+
+header .search-container .search-list a:hover {
+    background: #fff;
+    color: #333
+}
+
+header .user-login-info {
+    background: linear-gradient(282deg, #007c92 100%, #0091a8);
+    width: 100%;
+    padding: 32px
+}
+
+header .user-login-info .user-info-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex: 1 0 25%;
+    margin: 0 -10px
+}
+
+header .user-login-info .user-info-container .user-box {
+    width: 25%;
+    padding: 10px;
+    position: relative
+}
+
+header .user-login-info .user-info-container .user-box .inner-box {
+    padding: 16px 24px;
+    background: #fff;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, .16);
+    -webkit-box-shadow: 0 2px 8px 0 rgba(0, 0, 0, .16);
+    -moz-box-shadow: 0 2px 8px 0 rgba(0, 0, 0, .16);
+    font-family: VodafoneRegular;
+    font-size: 18px;
+    color: #333;
+    min-width: 280px;
+    height: 228px
+}
+
+header .user-login-info .user-info-container .user-box .inner-box .user-info-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 0 10px;
+    border-bottom: 1px solid #ebebeb
+}
+
+header .user-login-info .user-info-container .user-box .inner-box .user-info-header a {
+    color: #e60000;
+    text-decoration: underline
+}
+
+header .user-login-info .user-info-container .user-box .inner-box .user-info-header span {
+    display: flex;
+    align-items: center
+}
+
+header .user-login-info .user-info-container .user-box .inner-box .user-info-header span:before {
+    content: "";
+    background: url(https://www.vodafone.com.tr/assets/dist/images/4995e1ba4f85d89093b12128781e5c4e.svg) no-repeat;
+    width: 24px;
+    height: 24px;
+    display: block;
+    margin: 0 8px 0 0
+}
+
+header .user-login-info .user-info-container .user-box .inner-box .user-info-body {
+    padding: 16px 0
+}
+
+header .user-login-info .user-info-container .user-box .inner-box .user-info-body h6 {
+    line-height: 24px;
+    padding: 0 0 4px;
+    font-size: 18px;
+    font-family: VodafoneRegular;
+    font-weight: 400
+}
+
+header .user-login-info .user-info-container .user-box .inner-box .user-info-body .flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end
+}
+
+header .user-login-info .user-info-container .user-box .inner-box .user-info-body .flex-container span {
+    line-height: 34px
+}
+
+header .user-login-info .user-info-container .user-box .inner-box .user-info-body .flex-container span strong {
+    font-size: 28px;
+    font-family: VodafoneRegularBold
+}
+
+header .user-login-info .user-info-container .user-box .inner-box .user-info-body .user-info-process {
+    width: 100%
+}
+
+header .user-login-info .user-info-container .user-box .inner-box .user-info-body .user-info-process span {
+    width: 100%;
+    height: 5px;
+    background: #ebebeb;
+    border-radius: 2.5px;
+    -webkit-border-radius: 2.5px;
+    -moz-border-radius: 2.5px;
+    display: block;
+    position: relative;
+    margin: 8px 0 0
+}
+
+header .user-login-info .user-info-container .user-box .inner-box .user-info-body .user-info-process span:after {
+    content: "";
+    width: 75%;
+    background: #e60000;
+    border-radius: 2.5px;
+    -webkit-border-radius: 2.5px;
+    -moz-border-radius: 2.5px;
+    display: block;
+    height: 5px;
+    position: absolute
+}
+
+header .user-login-info .user-info-container .user-box .inner-box .user-info-body .user-info-end-date {
+    font-size: 14px;
+    line-height: 18px;
+    color: #999;
+    display: block;
+    margin: 16px 0 0
+}
+
+header .user-login-info .user-info-container .user-box .inner-box .user-info-body .invoice {
+    text-align: center
+}
+
+header .user-login-info .user-info-container .user-box .inner-box .user-info-body .invoice .invoice-price {
+    font-size: 40px;
+    line-height: 48px;
+    display: block;
+    font-family: VodafoneLight
+}
+
+header .user-login-info .user-info-container .user-box .inner-box .user-info-body .invoice .invoice-price em {
+    font-family: Arial;
+    font-weight: 400;
+    font-style: normal
+}
+
+header .user-login-info .user-info-container .user-box .inner-box .user-info-body .invoice .user-info-end-date {
+    margin: 8px 0 0
+}
+
+header .user-login-info .user-info-container .user-box .inner-box .user-info-footer ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 6px 0 0
+}
+
+header .user-login-info .user-info-container .user-box .inner-box .user-info-footer ul li {
+    padding: 0 12px
+}
+
+header .user-login-info .user-info-container .user-box .inner-box .user-info-footer ul li a {
+    text-indent: -9999px;
+    width: 10px;
+    height: 10px;
+    background: #ccc;
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    display: block;
+    transition: background .3s
+}
+
+header .user-login-info .user-info-container .user-box .inner-box .user-info-footer ul li a.active,
+header .user-login-info .user-info-container .user-box .inner-box .user-info-footer ul li a:hover {
+    background: #e60000
+}
+
+header .user-login-info .user-info-container .user-box .inner-box .user-info-footer .invoice-buy {
+    font-size: 20px;
+    line-height: 28px;
+    padding: 13px 0;
+    width: 100%;
+    background: #e60000;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    text-align: center
+}
+
+header .user-login-info .user-info-container .user-box .inner-box.single-box {
+    padding: 12px 16px;
+    margin: 15px 0 0;
+    height: 71px;
+    display: flex;
+    align-items: center
+}
+
+header .user-login-info .user-info-container .user-box .inner-box.single-box:first-child {
+    margin: 0
+}
+
+header .user-login-info .user-info-container .user-box .inner-box.single-box .single-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%
+}
+
+header .user-login-info .user-info-container .user-box .inner-box.single-box .single-container:after {
+    background: url(https://www.vodafone.com.tr/assets/dist/images/4bc75b0de70bcbd8858d920081e822c5.svg) no-repeat;
+    content: "";
+    width: 32px;
+    height: 32px;
+    display: block
+}
+
+header .user-login-info .user-info-container .user-box .inner-box.single-box .single-container .text {
+    display: flex;
+    align-items: center
+}
+
+header .user-login-info .user-info-container .user-box .inner-box.single-box .single-container .text:before {
+    background: url(https://www.vodafone.com.tr/assets/dist/images/4995e1ba4f85d89093b12128781e5c4e.svg) no-repeat;
+    content: "";
+    width: 24px;
+    height: 24px;
+    display: block;
+    margin: 0 18px 0 0
+}
+
+header .user-login-info .user-info-container .user-box .inner-box.single-box .single-container .text span {
+    color: #666;
+    font-size: 16px;
+    line-height: 20px;
+    font-family: VodafoneRegular;
+    margin: 0 0 2px
+}
+
+header .user-login-info .user-info-container .user-box .inner-box.single-box .single-container .text strong {
+    font-size: 18px;
+    line-height: 24px;
+    color: #333;
+    font-family: VodafoneRegular;
+    display: block;
+    font-weight: 400
+}
+
+header .user-login-info .user-info-container .user-box.slide-box .inner-box {
+    position: absolute
+}
+
+header .user-login-info .user-info-container .user-box.slide-box .slide-navigation {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: 35%;
+    padding: 16px 0;
+    left: 0;
+    right: 0;
+    z-index: 1
+}
+
+header .user-login-info .user-info-container .user-box.slide-box .slide-navigation li a {
+    text-indent: -9999px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    box-shadow: 0 1px 3px 1px hsla(0, 0%, 51%, .5);
+    -webkit-box-shadow: 0 1px 3px 1px hsla(0, 0%, 51%, .5);
+    -moz-box-shadow: 0 1px 3px 1px hsla(0, 0%, 51%, .5);
+    background: #fff;
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    margin: 0 -5px
+}
+
+header .user-login-info .user-info-container .user-box.slide-box .slide-navigation li a:after {
+    background: url(https://www.vodafone.com.tr/assets/dist/images/67e7fb9172f435117670ae317fd50a51.svg) no-repeat;
+    width: 24px;
+    height: 24px;
+    display: block;
+    content: ""
+}
+
+header .user-login-info .user-info-container .user-box.slide-box .slide-navigation li:first-child a:after {
+    background: url(https://www.vodafone.com.tr/assets/dist/images/6ae14c33b86ba32698653d86bee219b1.svg) no-repeat
+}
+
+header .user-login-info .user-info-container .user-box .user-box-logout {
+    border: 1px solid #fff;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    width: 100%;
+    display: block;
+    font-size: 20px;
+    line-height: 28px;
+    padding: 12px 0;
+    text-align: center;
+    color: #fff;
+    font-family: VodafoneRegular;
+    margin: 17px 0 0
+}
+
+@media screen and (max-width:1199px) {
+    header {
+        position: relative;
+        height: 72px
+    }
+
+    header .top-header {
+        display: none
+    }
+
+    header .menu {
+        position: fixed;
+        overflow: hidden;
+        z-index: 1000
+    }
+
+    header .menu .flex .left {
+        padding: 0 0 0 20px
+    }
+
+    header .menu .flex .left .menu-flex {
+        position: fixed;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 72px;
+        z-index: 1000;
+        background: transparent;
+        width: 100%;
+        height: calc(100vh - 72px);
+        overflow-y: scroll;
+        display: none
+    }
+
+    header .menu .flex .left .menu-flex::-webkit-scrollbar,
+    header .menu .flex .left .menu-flex::-webkit-scrollbar-track {
+        display: none
+    }
+
+    header .menu .flex .left .menu-flex::-webkit-scrollbar-thumb {
+        display: none
+    }
+
+    header .menu .flex .left .menu-flex.active {
+        display: block
+    }
+
+    header .menu .flex .left .menu-flex .menu-mobil-container {
+        position: absolute;
+        display: block;
+        right: 0;
+        top: 0;
+        width: 100%;
+        max-width: 370px;
+        min-height: calc(100vh - 73px);
+        height: auto;
+        background: #fff
+    }
+
+    header .menu .flex .left .menu-flex .menu-mobil-container .menu-container {
+        padding: 0 0 0 15px
+    }
+
+    header .menu .flex .left .menu-flex .menu-mobil-container .menu-container ul {
+        flex-direction: column
+    }
+
+    header .menu .flex .left .menu-flex .menu-mobil-container .menu-container ul li {
+        width: 100%
+    }
+
+    header .menu .flex .left .menu-flex .menu-mobil-container .menu-container ul li a {
+        font-size: 20px;
+        padding: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border: 0
+    }
+
+    header .menu .flex .left .menu-flex .menu-mobil-container .menu-container ul li a:hover {
+        border: 0
+    }
+
+    header .menu .flex .left .menu-flex .menu-mobil-container .menu-container ul li.active+.submenu {
+        z-index: 1;
+        visibility: visible;
+        opacity: 1;
+        max-height: 1000px
+    }
+
+    header .menu .flex .left .menu-flex .menu-mobil-container .menu-container ul .submenu {
+        position: relative;
+        background: transparent !important;
+        top: 0;
+        padding: 0;
+        max-height: 0;
+        overflow: hidden;
+        transition-delay: inherit;
+        transition: all .3s;
+        transform: inherit;
+        top: inherit
+    }
+
+    header .menu .flex .left .menu-flex .menu-mobil-container .menu-container ul .submenu .container {
+        padding: 0
+    }
+
+    header .menu .flex .left .menu-flex .menu-mobil-container .menu-container ul .submenu ul {
+        margin: 0;
+        padding: 0 0 0 15px
+    }
+
+    header .menu .flex .left .menu-flex .menu-mobil-container .menu-container ul .submenu ul li a {
+        padding: 0;
+        transition: all .3s
+    }
+
+    header .menu .flex .left .menu-flex .menu-mobil-container .menu-container ul .submenu ul li .sub {
+        position: relative;
+        background: transparent;
+        top: inherit;
+        right: inherit;
+        left: inherit;
+        max-height: 0;
+        padding: 0
+    }
+
+    header .menu .flex .left .menu-flex .menu-mobil-container .menu-container ul .submenu ul li .sub .container {
+        padding: 0
+    }
+
+    header .menu .flex .left .menu-flex .menu-mobil-container .menu-container ul .submenu ul li .sub ul {
+        background: transparent;
+        padding: 0 0 0 15px
+    }
+
+    header .menu .flex .left .menu-flex .menu-mobil-container .menu-container ul .submenu ul li .sub ul li .sub-item ul {
+        background: transparent;
+        max-height: 0
+    }
+
+    header .menu .flex .left .menu-flex .menu-mobil-container .menu-container ul .submenu ul li .sub ul li.active .sub-item ul {
+        position: relative;
+        top: inherit;
+        left: inherit;
+        max-height: 1000px;
+        visibility: visible;
+        opacity: 1;
+        transform: rotate(0)
+    }
+
+    header .menu .flex .left .menu-flex .menu-mobil-container .menu-container ul .submenu ul li .sub ul li.active .sub2 {
+        visibility: visible;
+        opacity: 1;
+        z-index: 6;
+        transform: translateY(0);
+        transition-delay: 0s, 0s, .3s;
+        position: relative;
+        background: transparent;
+        top: inherit;
+        right: inherit;
+        left: inherit;
+        max-height: 0;
+        padding: 0
+    }
+
+    header .menu .flex .left .menu-flex .menu-mobil-container .menu-container ul .submenu ul li:hover .sub {
+        visibility: hidden;
+        opacity: 0;
+        z-index: -1;
+        max-height: 0
+    }
+
+    header .menu .flex .left .menu-flex .menu-mobil-container .menu-container ul .submenu ul li.active .sub {
+        z-index: 1;
+        visibility: visible;
+        opacity: 1;
+        max-height: 1000px;
+        transform: translate(0)
+    }
+
+    header .menu .flex .left .menu-flex .menu-mobil-container .menu-container ul:hover .submenu {
+        visibility: hidden;
+        opacity: 0;
+        z-index: -1;
+        max-height: 0
+    }
+
+    header .menu .flex .left .menu-flex .menu-mobil-container .mobil-footer {
+        display: block;
+        padding: 0 15px
+    }
+
+    header .menu .flex .left .menu-flex .menu-mobil-container .mobil-footer ul {
+        display: flex;
+        padding: 20px 0;
+        list-style: none;
+        margin: 0
+    }
+
+    header .menu .flex .left .menu-flex .menu-mobil-container .mobil-footer ul li {
+        width: 31.33%;
+        margin: 0 4px
+    }
+
+    header .menu .flex .left .menu-flex .menu-mobil-container .mobil-footer ul li a {
+        padding: 10px;
+        font-size: 12px;
+        color: #333;
+        line-height: 18px;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        display: block;
+        text-align: center;
+        font-family: VodafoneRegular
+    }
+
+    header .menu .flex .left .menu-flex .menu-mobil-container .mobil-footer ul li a .icon-footer {
+        width: 24px;
+        height: 24px;
+        display: block;
+        margin: 0 auto
+    }
+
+    header .menu .flex .left .menu-flex .menu-mobil-container .mobil-footer ul li a .fatura-ode {
+        background: url(https://www.vodafone.com.tr/assets/img/ic-bill-report-generic-tariff-plan-red.png) no-repeat
+    }
+
+    header .menu .flex .left .menu-flex .menu-mobil-container .mobil-footer ul li a .kolay-paket-al {
+        background: url(https://www.vodafone.com.tr/assets/img/smarthome-kit.png) no-repeat
+    }
+
+    header .menu .flex .left .menu-flex .menu-mobil-container .mobil-footer ul li a .telefon-al {
+        background: url(https://www.vodafone.com.tr/assets/img/eshop.png) no-repeat
+    }
+
+    header .menu .flex .left .menu-flex .menu-mobil-container .mobil-footer ul li a span {
+        margin: 5px 0 0;
+        display: block
+    }
+
+    header .menu .flex .left .menu-flex .menu-mobil-container .mobil-footer .button-container .primary-button {
+        padding: 15px 35px 15px 11px;
+        margin: 0 0 10px;
+        font-family: VodafoneLight
+    }
+
+    header .menu .flex .left .menu-flex .menu-mobil-container .mobil-footer .button-container .secondry-button-light {
+        font-family: VodafoneLight
+    }
+
+    header .menu .flex .right {
+        padding: 0 20px 0 0
+    }
+
+    header .menu .flex .right .mobile-menu-button {
+        display: block;
+        padding: 12px 10px;
+        margin: 0;
+        height: 72px;
+        display: flex;
+        align-items: center
+    }
+
+    header .menu .flex .right .mobile-menu-button.active~.right {
+        background: red
+    }
+
+    header .menu .flex .right .news-notification .news-popup {
+        position: fixed;
+        max-width: 600px;
+        min-width: 320px;
+        width: 100%;
+        right: 47px;
+        left: inherit
+    }
+
+    header .menu .flex .right .news-notification .news-popup:before {
+        left: -30px;
+        right: 0;
+        margin: 0 auto
+    }
+
+    .menu-item__title {
+        padding: 15px 35px 15px 11px
+    }
+
+    .menu-item__button {
+        width: 68px;
+        height: 40px;
+        background-color: transparent;
+        padding-left: 20px
+    }
+}
+
+@media screen and (max-width:960px) {
+    header .menu .flex .right .news-notification .news-popup:before {
+        left: -10px
+    }
+}
+
+@media screen and (max-width:740px) {
+
+    header .search-container .search-list,
+    header .search-container h6 {
+        display: none
+    }
+}
+
+@media screen and (max-width:640px) {
+    header .menu .flex .right .profile a {
+        width: auto
+    }
+
+    header .menu .flex .right .profile a .profile-login {
+        display: none
+    }
+
+    header .menu .flex .right .news-notification .news-popup.news-open {
+        left: 0;
+        right: 0;
+        margin: 10px auto 0
+    }
+
+    header .menu .flex .right .news-notification .news-popup.news-open:before {
+        display: none
+    }
+
+    header .menu .flex .right .news-notification .news:after {
+        display: none !important;
+        content: "";
+        height: 10px;
+        width: 10px;
+        display: none;
+        position: fixed;
+        top: 64px;
+        border: 10px solid transparent;
+        border-bottom-color: #fff;
+        box-sizing: inherit;
+        z-index: 100;
+        -webkit-animation-name: fadeOutUp;
+        animation-name: fadeOutUp;
+        -webkit-animation: fadeOutUp .35s ease-in both;
+        animation: fadeOutUp .35s ease-in both
+    }
+
+    header .menu .flex .right .news-notification .news:hover:after {
+        display: block;
+        -webkit-animation-name: fadeInDown;
+        animation-name: fadeInDown;
+        -webkit-animation: fadeInDown .35s ease-in both;
+        animation: fadeInDown .35s ease-in both
+    }
+
+    header .menu .flex .right .show-stick-link {
+        display: none !important
+    }
+
+    header .search-container {
+        padding: 0 20px
+    }
+
+    header .search-container .flex form {
+        width: 100%
+    }
+
+    header .search-container .flex h5 {
+        font-size: 28px;
+        line-height: 36px;
+        margin: 40px 0
+    }
+
+    header .search-container .flex h6 {
+        font-size: 24px;
+        line-height: 16px;
+        margin: 30px 0 16px
+    }
+}
+.mobile-menu-button .navigation__toggle{
+    display: block;
+}
+.mobile-menu-button .navigation__close{
+    display: none;
+}
+.mobile-menu-button.active .navigation__toggle{
+    display: none;
+}
+.mobile-menu-button.active .navigation__close{
+    display: block;
+}
+@media screen and (max-width:480px) {
+    header {
+        height: 50px
+    }
+
+    header .menu {
+        overflow: visible
+    }
+
+    header .menu .flex .left .logo {
+        font-size: 35px;
+        line-height: normal;
+        margin: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center
+    }
+    header .menu .flex .left .logo svg {
+        width: 35px;
+        height: 35px;
+    }
+    header .menu .flex .left .menu-flex {
+        top: 48px
+    }
+
+    header .menu .flex .left .menu-flex .menu-mobil-container .mobil-footer .button-container .secondry-button-light {
+        margin: 0
+    }
+
+    header .menu .flex .right .mobile-menu-button {
+        height: 50px
+    }
+
+    header .menu .flex .right .search-bar {
+        padding: 0
+    }
+    header .menu .flex .right .search-bar svg {
+        width: 20px;
+        height: 20px;
+    }
+    header .menu .flex .right .search-bar span {
+        font-size: 20px
+    }
+
+    header .menu .flex .right .news-notification {
+        margin: 0 10px 0 0
+    }
+
+    header .menu .flex .right .news-notification .news {
+        height: auto
+    }
+
+    header .menu .flex .right .news-notification .news .icon-news {
+        background-size: cover;
+        background-position: 5px 11px
+    }
+
+    header .menu .flex .right .news-notification .news .count {
+        top: 0
+    }
+
+    header .menu .flex .right .news-notification .news-popup {
+        right: 0
+    }
+
+    header .menu .flex .right .news-notification .news-popup:before {
+        content: "";
+        display: none !important
+    }
+
+    header .menu .flex .right .news-notification .news-popup .news-body ul {
+        max-height: 300px
+    }
+
+    header .menu .flex .right .profile a {
+        font-size: 20px;
+        height: auto;
+        padding: 12px 20px;
+        line-height: normal
+    }
+
+    header .menu .flex .right .profile.login {
+        margin: -3px 0 0
+    }
+
+    header .menu .flex .right .profile.login a {
+        padding: 0;
+        height: auto;
+        line-height: normal;
+        background: #333;
+        border-radius: 100%;
+        width: 26px;
+        height: 26px;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        border: 0
+    }
+    header .menu .flex .right .profile.login a .icon {
+        color: #fff;
+        width: 16px;
+        height: 16px;
+        stroke-width: .3em;
+    }
+    header .menu .flex .right .profile.login a i {
+        color: #fff;
+        line-height: inherit;
+        font-size: 14px
+    }
+    header .menu .flex .right .basket-container .basket svg {
+        stroke-width: 0.8px;
+        width: 31px;
+        height: 30px;
+    }
+    header .menu .flex .right .profile.login a div {
+        display: none
+    }
+
+    header .menu .flex .right .basket-container .basket {
+        padding: 0;
+        margin-right: 15px;
+        font-size: 26px;
+        position: relative;
+        top: 1px;
+    }
+
+    header .menu .flex .right .basket-container .basket .icon-basket {
+        width: 30px;
+        height: 30px;
+        background-position: 0 0
+    }
+
+    header .menu .flex .right .basket-container .basket .basket-count {
+        right: 4px;
+        top: -3px
+    }
+
+    header .search-container {
+        position: absolute;
+        top: 49px;
+        overflow-y: scroll
+    }
+
+    header .search-container .search-list {
+        display: block
+    }
+
+    header .search-container .search-list a {
+        padding: 12px 18px
+    }
+
+    header .search-container h6 {
+        display: block
+    }
+
+    header .search-container .search-close {
+        top: 12px;
+        right: 12px;
+        font-size: 18px
+    }
+
+    header .search-container .flex {
+        height: auto;
+        padding-bottom: 50px
+    }
+
+    header .search-container .flex h2 {
+        font-size: 36px;
+        margin-top: 40px
+    }
+}
+
+header .menu .flex .left .menu-flex .menu-mobil-container .mobil-footer ul li a .tl-yukle {
+    background: url(https://www.vodafone.com.tr/assets/img/auto-top-up.png) no-repeat;
+    background-size: cover
+}
+
+@media screen and (max-width:1200px) {
+    .header-links__button {
+        position: relative
+    }
+
+    .header-links__button:after {
+        content: " ";
+        box-sizing: border-box;
+        height: 16px;
+        width: 16px;
+        border-color: #e60000;
+        border-style: solid;
+        border-width: 0 1px 1px 0;
+        transform: rotate(45deg);
+        transition: .3s;
+        position: absolute;
+        z-index: 1000;
+        top: 50%;
+        margin-top: -11px;
+        right: 33px
+    }
+
+    .header-links__button.active:after {
+        transform: rotate(-136deg)
+    }
+}
+
+.auto-login-container {
+    background: #fbfbfb;
+    position: absolute;
+    width: 100%;
+    padding: 15px;
+    z-index: 1000;
+    display: none;
+    left: 0;
+    right: 0
+}
+
+.auto-login-container.active {
+    display: block;
+    top: 73px
+}
+
+.auto-login-container .profile-text {
+    display: none
+}
+
+.auto-login-container .auto-login {
+    margin: 5px 0 0 77px;
+    padding: 15px 40px 15px 25px;
+    display: inline-block;
+    background: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .2);
+    -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, .2);
+    -moz-box-shadow: 0 2px 4px rgba(0, 0, 0, .2);
+    width: 77%
+}
+
+.auto-login-container .auto-login .flex-container {
+    justify-content: space-between
+}
+
+.auto-login-container .auto-login .flex-container .left {
+    display: flex;
+    align-items: center
+}
+
+.auto-login-container .auto-login .flex-container .left .left-context {
+    display: flex
+}
+
+.auto-login-container .auto-login .flex-container .left .left-context .rest-use-login {
+    display: flex;
+    align-items: center;
+    padding: 0 30px 0 0
+}
+
+.auto-login-container .auto-login .flex-container .left .left-context .rest-use-login .chart-container {
+    width: 40px;
+    height: 40px;
+    background: #fff
+}
+
+.auto-login-container .auto-login .flex-container .left .left-context .rest-use-login .chart-container .CircularProgressbar-trail {
+    background: #efefef
+}
+
+.auto-login-container .auto-login .flex-container .left .left-context .rest-use-login .chart-container .CircularProgressbar-path {
+    stroke: #5e2750
+}
+
+.auto-login-container .auto-login .flex-container .left .left-context .rest-use-login .chart-text {
+    margin: 0 0 0 15px;
+    font-size: 20px;
+    line-height: 26px;
+    font-family: VodafoneLight
+}
+
+.auto-login-container .auto-login .flex-container .left .left-context .rest-use-login .chart-text span {
+    display: block
+}
+
+.auto-login-container .auto-login .flex-container .left .left-context .rest-use-login .chart-text strong {
+    display: block;
+    font-weight: 600
+}
+
+.auto-login-container .auto-login .flex-container .left .left-context .prepaid-text {
+    font-size: 18px;
+    line-height: 20px;
+    color: #333;
+    font-family: VodafoneRegular;
+    padding: 0 30px
+}
+
+.auto-login-container .auto-login .flex-container .left .auto-login-tariff {
+    display: block;
+    padding: 0 0 0 30px;
+    border-left: 1px solid #e60000;
+    font-size: 20px;
+    font-family: VodafoneLight;
+    line-height: 30px
+}
+
+.auto-login-container .auto-login .flex-container .left .auto-login-tariff h6 {
+    display: block;
+    font-size: 20px;
+    font-weight: 300
+}
+
+.auto-login-container .auto-login .flex-container .left .auto-login-tariff span {
+    padding: 4px 0
+}
+
+.auto-login-container .auto-login .flex-container .left .auto-login-tariff span strong {
+    margin: 0 0 0 10px
+}
+
+.auto-login-container .auto-login .flex-container .left .auto-login-tariff span strong em {
+    display: inline;
+    font-size: 20px;
+    font-family: Arial
+}
+
+.auto-login-container .auto-login .flex-container .left .auto-login-tariff span.prepaid-text,
+.auto-login-container .auto-login .flex-container .left .auto-login-tariff span.prepaid-text strong {
+    margin: 0
+}
+
+.auto-login-container .auto-login .flex-container .left .auto-login-tariff span.prepaid-text strong .tl-icon {
+    font-family: Arial !important;
+    font-weight: 400
+}
+
+.auto-login-container .auto-login .flex-container .left .auto-login-tariff em {
+    display: block;
+    font-size: 15px;
+    font-style: normal
+}
+
+.auto-login-container .auto-login .flex-container .auto-login-button-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center
+}
+
+.auto-login-container .auto-login .flex-container .auto-login-button-container a {
+    border-radius: 0;
+    font-size: 18px;
+    line-height: 20px;
+    padding: 14px 25px;
+    margin: 0;
+    transition: background .3s
+}
+
+.auto-login-container .auto-login .flex-container .auto-login-button-container a:hover {
+    background: #333
+}
+
+.auto-login-container .auto-login .flex-container .auto-login-button-container a:first-child {
+    margin-bottom: 15px
+}
+
+.auto-login-container .auto-login .flex-container .auto-login-button-container a:first-child:hover {
+    background: #900
+}
+
+.auto-login-container .all-operations {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 5px 0 0 20px
+}
+
+.auto-login-container .all-operations a {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .2);
+    -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, .2);
+    -moz-box-shadow: 0 2px 4px rgba(0, 0, 0, .2);
+    color: #333;
+    font-size: 18px;
+    font-family: VodafoneLight;
+    line-height: 21px;
+    display: block;
+    padding: 21px;
+    width: 178px;
+    text-align: center
+}
+
+.auto-login-container .all-operations a .profile-icon {
+    background: url(https://www.vodafone.com.tr/v2/user.png) no-repeat;
+    width: 16px;
+    height: 20px
+}
+
+.auto-login-container .all-operations a.logout {
+    color: #e60000
+}
+
+.corporate-conteiner {
+    position: absolute;
+    background: #fff;
+    width: 250px;
+    padding: 15px;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 0
+}
+
+.corporate-conteiner.active {
+    z-index: 1;
+    visibility: visible;
+    opacity: 1
+}
+
+.corporate-conteiner span {
+    font-size: 32px;
+    font-family: VodafoneLight;
+    text-align: center;
+    display: block;
+    margin: 0 0 15px
+}
+
+.corporate-conteiner span.corporate-profile {
+    display: none
+}
+
+.corporate-conteiner .all-operations a {
+    display: block;
+    width: 100%;
+    color: #fff;
+    font-size: 18px;
+    background: #e60000;
+    text-align: center;
+    font-family: VodafoneLight;
+    padding: 14px
+}
+
+.corporate-conteiner .all-operations a span {
+    font-size: 18px;
+    margin: 0
+}
+
+.corporate-conteiner .all-operations a.logout {
+    margin: 10px 0 0;
+    background: #666
+}
+
+.corporate-conteiner .all-operations a i {
+    display: none
+}
+
+@media screen and (max-width:1199px) {
+    .primary-button {
+        background: #e60000;
+        color: #fff;
+        border-radius: 6px;
+        -webkit-border-radius: 6px;
+        -moz-border-radius: 6px;
+        display: block;
+        width: 100%;
+        font-family: VodafoneRegular;
+        font-size: 20px;
+        line-height: 1.33;
+        text-align: center;
+        text-decoration: none;
+        padding: 10px 0;
+        transition: background .3s;
+    }
+    .primary-button:hover {
+        color: #fff;
+        background: #900;
+    }
+    .secondry-button-light {
+        background: #ddd;
+        color: #333;
+        font-size: 20px;
+        line-height: 1.33;
+        text-align: center;
+        display: block;
+        max-width: 380px;
+        padding: 15px 35px 15px 11px;
+        text-decoration: none;
+        border-radius: 6px;
+        -webkit-border-radius: 6px;
+        -moz-border-radius: 6px;
+        margin: 0 auto 48px;
+        font-family: VodafoneRegular;
+        font-weight: 400;
+        transition: all .3s;
+    }
+    .secondry-button-light:hover {
+        background: #afafaf;
+        color: #333;
+    }
+    .auto-login-container {
+        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .2);
+        -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .2);
+        -moz-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .2)
+    }
+
+    .auto-login-container.active {
+        position: fixed
+    }
+
+    .auto-login-container .profile-text {
+        display: block;
+        text-align: center;
+        padding: 20px 0 15px
+    }
+
+    .auto-login-container .profile-text span {
+        display: block;
+        font-size: 22px;
+        line-height: 35px;
+        font-family: VodafoneLight
+    }
+
+    .auto-login-container .profile-text span:last-child {
+        padding: 0;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: normal
+    }
+
+    .auto-login-container .flex-container {
+        flex-direction: column
+    }
+
+    .auto-login-container .flex-container .auto-login {
+        width: 100%;
+        margin: 0;
+        padding: 0
+    }
+
+    .auto-login-container .flex-container .auto-login .flex-container .left {
+        flex-direction: column
+    }
+
+    .auto-login-container .flex-container .auto-login .flex-container .left .left-context {
+        padding: 20px 20px 10px;
+        border-top: 1px solid #e60000;
+        border-bottom: 1px solid #e60000;
+        width: 90%;
+        justify-content: center
+    }
+
+    .auto-login-container .flex-container .auto-login .flex-container .left .left-context .prepaid-text {
+        text-align: center
+    }
+
+    .auto-login-container .flex-container .auto-login .flex-container .left .left-context .rest-use-login {
+        flex-direction: column;
+        padding: 0
+    }
+
+    .auto-login-container .flex-container .auto-login .flex-container .left .left-context .rest-use-login .chart-text {
+        margin: 20px 0;
+        text-align: center
+    }
+
+    .auto-login-container .flex-container .auto-login .flex-container .left .auto-login-tariff {
+        border: 0;
+        width: 100%;
+        text-align: center;
+        padding: 20px 0 15px
+    }
+
+    .auto-login-container .flex-container .auto-login .flex-container .auto-login-button-container {
+        flex-direction: row;
+        padding: 0 0 40px
+    }
+
+    .auto-login-container .flex-container .auto-login .flex-container .auto-login-button-container a {
+        max-width: 142px;
+        margin: 0 10px
+    }
+
+    .auto-login-container .all-operations {
+        flex-direction: row;
+        margin: 10px 0 5px
+    }
+
+    .auto-login-container .all-operations a {
+        width: 49%
+    }
+}
+
+@media screen and (max-width:480px) {
+    .auto-login-container.active {
+        top: 48px;
+        overflow: scroll
+    }
+
+    .auto-login-container .flex-container .auto-login .flex-container .left {
+        padding: 0 10px
+    }
+
+    .auto-login-container .flex-container .auto-login .flex-container .left .left-context {
+        padding: 20px 10px 10px;
+        width: 100%
+    }
+
+    .auto-login-container .flex-container .auto-login .flex-container .left .left-context .rest-use-login {
+        margin: 0 12px
+    }
+
+    .auto-login-container .flex-container .auto-login .flex-container .auto-login-button-container a {
+        padding: 14px 12px
+    }
+
+    .corporate-conteiner.active {
+        top: 49px;
+        right: 0
+    }
+
+    .corporate-conteiner.active span {
+        margin-bottom: 5px
+    }
+
+    .corporate-conteiner.active span.corporate-profile {
+        display: block;
+        font-size: 24px;
+        margin-bottom: 20px
+    }
+}
+
+@media screen and (max-width:320px) {
+    .auto-login-container .flex-container .auto-login .flex-container .left .left-context .rest-use-login {
+        margin: 0 8px
+    }
+
+    .auto-login-container .flex-container .auto-login .flex-container .left .left-context .rest-use-login .chart-text {
+        font-size: 18px;
+        line-height: 24px
+    }
+
+    .auto-login-container .flex-container .auto-login .flex-container .auto-login-button-container a {
+        width: 120px;
+        font-size: 14px;
+        margin: 0 5px;
+        padding: 14px
+    }
+}
+
+.footer {
+    background: #333;
+    padding: 20px 0;
+    margin: 20px 0 0
+}
+
+.footer .menu {
+    width: 100%;
+    height: auto
+}
+
+.footer .menu ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0;
+    margin: 0
+}
+
+.footer .menu ul li h4 a {
+    color: #fff;
+    font-family: VodafoneLight;
+    font-size: 25px;
+    line-height: 30px;
+    margin: 40px 0 30px;
+    display: block;
+    font-weight: 700
+}
+
+.footer .menu ul li ul {
+    display: block
+}
+
+.footer .menu ul li ul li {
+    padding: 0 0 15px
+}
+
+.footer .menu ul li ul li a {
+    color: #fff;
+    font-size: 16px;
+    font-family: VodafoneRegular;
+    display: block;
+    word-wrap: break-word;
+    line-height: 18px
+}
+
+.footer .top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 25px 0 15px
+}
+
+.footer .top .social {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0
+}
+
+.footer .top .social li {
+    display: block;
+    margin: 0 15px 0 0
+}
+
+.footer .top .social li a {
+    color: #fff;
+    font-size: 30px
+}
+
+.footer .top .complaint {
+    font-size: 25px;
+    font-family: VodafoneLight;
+    line-height: 30px;
+    color: #fff
+}
+
+.footer .menu-helpers {
+    width: 100%;
+    padding: 47px 0 48px
+}
+
+.footer .menu-helpers ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0
+}
+
+.footer .menu-helpers ul li {
+    padding: 0 47px
+}
+
+.footer .menu-helpers ul li a {
+    color: #fff;
+    font-size: 25px;
+    line-height: 30px;
+    display: block;
+    font-family: VodafoneLight
+}
+
+.footer .bottom {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 0 15px
+}
+
+.footer .bottom ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0
+}
+
+.footer .bottom ul li {
+    padding: 0 15px;
+    border-left: 1px solid #fff
+}
+
+.footer .bottom ul li:first-child {
+    padding-left: 0;
+    border: 0
+}
+
+.footer .bottom span,
+.footer .bottom ul li a {
+    color: #fff;
+    font-size: 20px;
+    font-family: VodafoneRegular
+}
+.chevron__container{
+    display: none;
+}
+@media screen and (max-width:1024px) {
+    .footer .menu {
+        padding: 30px 30px 0
+    }
+
+    .footer .menu ul {
+        flex-direction: column
+    }
+
+    .footer .menu ul li {
+        border-top: 1px solid #999;
+        padding: 10px 0
+    }
+
+    .footer .menu ul li h4 {
+        display: flex;
+        justify-content: space-between;
+        margin: 0;
+    }
+
+    .footer .menu ul li h4:after {
+       /*  font-family: icomoon !important;
+        speak: none;
+        font-style: normal;
+        font-weight: 400;
+        font-variant: normal;
+        text-transform: none;
+        line-height: 1;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        content: "\E903";
+        font-size: 23px;
+        display: block;
+        color: #fff;
+        margin: 0 8px 0 0;
+        transition: all .3s */
+    }
+    .chevron__container{
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        transition: all .3s
+    }
+    .active .chevron__container{
+
+        transform: rotate(180deg)
+    }
+    .footer .menu ul li h4 a {
+        margin: 0;
+        font-size: 20px;
+        line-height: 30px
+    }
+
+    .footer .menu ul li ul {
+        height: 0;
+        overflow: hidden;
+        transition: all .2s;
+        padding: 0 20px
+    }
+
+    .footer .menu ul li ul li {
+        margin: 0;
+        border: 0
+    }
+
+    .footer .menu ul li.active h4:after {
+        transform: rotate(180deg)
+    }
+
+    .footer .menu ul li.active ul {
+        overflow: visible;
+        height: auto;
+        padding-top: 10px
+    }
+
+    .footer .top {
+        flex-direction: column;
+        align-items: center
+    }
+
+    .footer .top .complaint {
+        font-size: 20px;
+        line-height: 30px
+    }
+
+    .footer .top .social {
+        margin: 0 0 15px
+    }
+
+    .footer .menu-helpers {
+        padding: 30px 0 15px
+    }
+
+    .footer .menu-helpers ul li {
+        padding: 0 10px
+    }
+
+    .footer .menu-helpers ul li a {
+        font-size: 20px
+    }
+
+    .footer .bottom,
+    .footer .bottom ul {
+        flex-direction: column;
+        align-items: center
+    }
+
+    .footer .bottom ul li {
+        border: 0;
+        padding: 0 0 15px
+    }
+
+    .footer .bottom ul li a {
+        font-size: 16px;
+        line-height: 22px
+    }
+
+    .footer .bottom span {
+        font-size: 16px
+    }
+}
+
+.footer__aside:after,
+.footer__aside:before {
+    content: " ";
+    display: table
+}
+
+.footer__aside:after {
+    clear: both
+}
+
+.footer {
+    overflow: hidden
+}
+
+.footer__chat {
+    text-align: center
+}
+
+.footer__heading:hover {
+    cursor: pointer
+}
+
+@media only screen and (max-width:970px) {
+    .footer-accordion {
+        margin: 40px 0 0
+    }
+
+    .footer-accordion__item {
+        font-size: 18px
+    }
+
+    .footer-accordion__heading {
+        border-top: 1px solid #999;
+        display: block;
+        padding: 10px;
+        font-size: 20px;
+        margin: 0
+    }
+
+    .footer-accordion__heading:hover {
+        cursor: pointer
+    }
+
+    .footer-accordion__content {
+        padding: 10px 20px
+    }
+
+    .footer-accordion__content--collapse {
+        display: none
+    }
+}
+
+.footer__curtain {
+    background-color: #333
+}
+
+.footer {
+    color: #fff;
+    position: relative;
+    z-index: 4
+}
+
+.footer__list {
+    margin-bottom: 37px
+}
+
+.footer__banner {
+    bottom: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1
+}
+
+.footer__image {
+    max-width: none;
+    min-height: 100%;
+    min-width: 100%
+}
+
+.footer__navigation {
+    padding: 20px 0 50px
+}
+
+.footer__icon {
+    margin-right: 10px
+}
+
+.footer__item {
+    margin: 15px 0;
+    font-size: 20px
+}
+
+.footer__item--last {
+    margin-bottom: 25px
+}
+
+.footer__aside {
+    font-size: 20px;
+    margin-top: 30px
+}
+
+.footer__contracts {
+    margin-bottom: 10px;
+    float: left
+}
+
+.footer__contract {
+    border-left: 1px solid;
+    display: inline-block;
+    padding: 0 15px
+}
+
+.footer__contract--first {
+    border-left: none;
+    padding-left: 0
+}
+
+.footer__copyright {
+    float: right;
+    margin-top: 5px;
+    font-family: VodafoneRegular
+}
+
+@media only screen and (max-width:970px) {
+    .footer__chat {
+        padding: 0 20px
+    }
+
+    .footer__navigation {
+        padding: 20px 20px 40px
+    }
+
+    .footer__heading {
+        border-top: 1px solid #999;
+        display: block;
+        padding: 10px;
+        font-size: 20px;
+        margin: 0
+    }
+
+    .footer__heading--last {
+        border-bottom: 1px solid #999
+    }
+
+    .footer__content {
+        padding: 10px 20px
+    }
+
+    .footer__icon {
+        width: 25px;
+        height: 25px;
+        margin-right: 5px
+    }
+
+    .footer__accordion {
+        margin: 40px 0 0
+    }
+
+    .footer__aside {
+        margin-top: 40px;
+        font-size: 16px
+    }
+
+    .footer__item {
+        margin: 20px 0;
+        font-size: 18px
+    }
+
+    .footer__list {
+        margin-bottom: 17px
+    }
+}
+
+@media only screen and (max-width:639px) {
+    .footer__aside {
+        margin-top: 20px
+    }
+
+    .footer__navigation {
+        padding: 15px 0 30px
+    }
+
+    .footer__copyright {
+        clear: left;
+        display: block;
+        float: none
+    }
+
+    .footer__heading {
+        padding: 10px
+    }
+
+    .footer__accordion {
+        margin: 12px 0 25px
+    }
+
+    .footer__contract {
+        padding: 0 5px;
+        margin: 5px 0 15px
+    }
+
+    .footer__contract--first {
+        padding-left: 0
+    }
+
+    .footer__item {
+        margin: 18px 0
+    }
+}
+
+@media only screen and (max-width:970px) {
+    .footer-accordion {
+        margin: 40px 0 0
+    }
+
+    .footer-accordion__item {
+        font-size: 18px
+    }
+
+    .footer-accordion__heading {
+        border-top: 1px solid #999;
+        display: block;
+        padding: 10px;
+        font-size: 20px;
+        margin: 0
+    }
+
+    .footer-accordion__heading:hover {
+        cursor: pointer
+    }
+
+    .footer-accordion__content {
+        padding: 10px 20px
+    }
+
+    .footer-accordion__content--collapse {
+        display: none
+    }
+
+    .header__global {
+        float: left
+    }
+}
+
+@media only screen and (max-width:639px) {
+    .footer-accordion {
+        margin: 20px 0 0
+    }
+}
+
+footer {
+    background-color: #333;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #fff;
+    margin-top: 30px
+}
+
+footer ul.list:after {
+    content: " ";
+    display: block;
+    clear: both
+}
+
+footer ul.list--reset {
+    margin: 0;
+    list-style: none;
+    padding-left: 0
+}
+
+footer ul.list span.text {
+    text-indent: -2000px;
+    display: inline-block
+}
+
+footer ul.list li {
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 15px;
+    font-size: 16px
+}
+
+footer ul.list li:last-child {
+    margin-bottom: 0;
+    margin-right: 0
+}
+
+footer ul.list--left {
+    float: left
+}
+
+footer ul.list--right {
+    float: right
+}
+
+footer .navigation .activate {
+    display: none;
+    position: absolute;
+    cursor: pointer;
+    width: 100%;
+    height: 40px;
+    margin: 0 0 0 -15px;
+    opacity: 0
+}
+
+@media(min-width:0)and (max-width:991px) {
+    footer .navigation {
+        padding-top: 30px
+    }
+
+    footer .navigation label a {
+        pointer-events: none;
+        margin: 0 !important;
+        border-top: 1px solid #999;
+        padding: 10px 0;
+        font-size: 20px !important
+    }
+
+    footer .navigation label a:after {
+        font-family: icomoon !important;
+        speak: none;
+        font-style: normal;
+        font-weight: 400;
+        font-variant: normal;
+        text-transform: none;
+        line-height: 1;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        content: "\E903";
+        float: right;
+        top: 1px;
+        position: relative;
+        font-size: 23px;
+        right: 8px;
+        -webkit-transition: all .3s linear;
+        -moz-transition: all .3s linear;
+        -ms-transition: all .3s linear;
+        -o-transition: all .3s linear
+    }
+
+    footer .navigation .activate:checked~.drop-down {
+        max-height: 300px;
+        padding: 0 20px 10px
+    }
+
+    footer .navigation .activate:checked~label a:after {
+        -webkit-transform: rotateX(180deg);
+        -moz-transform: rotateX(180deg);
+        -ms-transform: rotateX(180deg);
+        -o-transform: rotateX(180deg)
+    }
+
+    footer .navigation .drop-down {
+        max-height: 0;
+        overflow: hidden
+    }
+
+    footer .navigation .drop-down li {
+        float: none !important
+    }
+
+    footer .navigation .drop-down,
+    footer .navigation .grid__item--1\/5 {
+        -webkit-transform: translateZ(0);
+        transition: all .3s
+    }
+}
+
+footer .navigation .grid {
+    display: block;
+    letter-spacing: -.215em;
+    padding-left: 0
+}
+
+@media(min-width:0)and (max-width:991px) {
+    footer .navigation .grid {
+        margin: 0 30px !important
+    }
+}
+
+@media(min-width:992px) {
+    footer .navigation .grid {
+        margin: 0
+    }
+}
+
+footer .navigation .grid__item {
+    vertical-align: top;
+    display: inline-block;
+    letter-spacing: normal;
+    margin: 0
+}
+
+@media(min-width:0)and (max-width:991px) {
+    footer .navigation .grid__item--1\/5 {
+        width: 100%
+    }
+}
+
+@media(min-width:992px) {
+    footer .navigation .grid__item--1\/5 {
+        width: 20%
+    }
+}
+
+footer .navigation .heading {
+    display: block;
+    font-family: VodafoneLight;
+    line-height: 1em;
+    margin: 0;
+    width: 100%;
+    font-weight: 400
+}
+
+footer .navigation .heading--light {
+    font-family: VodafoneLight
+}
+
+footer .navigation .heading--4 {
+    font-size: 25px;
+    line-height: 30px;
+    margin: 40px 0 30px
+}
+
+@media(min-width:0)and (max-width:991px) {
+    footer .top {
+        text-align: center
+    }
+
+    footer .top .list--left,
+    footer .top .list--right {
+        display: inline-block;
+        float: none
+    }
+}
+
+@media(min-width:0)and (max-width:991px) {
+    footer .top .social__list {
+        display: table;
+        margin-right: auto;
+        margin-left: auto
+    }
+}
+
+footer .top .social__list .social__item {
+    font-size: 30px
+}
+
+@media(min-width:0)and (max-width:991px) {
+    footer .middle {
+        padding: 30px 0 15px
+    }
+}
+
+@media(min-width:992px) {
+    footer .middle {
+        padding: 47px 0 33px
+    }
+}
+
+footer .middle>ul {
+    display: inline-block
+}
+
+@media(min-width:0)and (max-width:991px) {
+    footer .middle>ul li {
+        margin-bottom: 0
+    }
+}
+
+@media(min-width:992px) {
+    footer .middle>ul li {
+        padding-right: 94px
+    }
+
+    footer .middle>ul li:last-child {
+        padding-right: 0
+    }
+}
+
+footer .heading--4 {
+    line-height: 30px;
+    margin: 40px 0 30px
+}
+
+@media(min-width:0)and (max-width:991px) {
+    footer .heading--4 {
+        font-size: 20px
+    }
+}
+
+@media(min-width:992px) {
+    footer .heading--4 {
+        font-size: 25px
+    }
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none
+}
+
+@media(min-width:0)and (max-width:991px) {
+    footer .bottom .footer__copyright {
+        margin-top: 15px
+    }
+}
+
+@media(min-width:992px) {
+    footer .bottom .footer__copyright li {
+        font-size: 20px
+    }
+}
+
+footer .bottom .footer__contract li {
+    border-left: 1px solid;
+    padding-left: 10px
+}
+
+@media(min-width:0)and (max-width:991px) {
+    footer .bottom .footer__contract li {
+        width: 100%;
+        text-align: center;
+        border: 0;
+        padding-left: 0
+    }
+}
+
+@media(min-width:992px) {
+    footer .bottom .footer__contract li {
+        font-size: 20px
+    }
+}
+
+footer .bottom .footer__contract li:first-child {
+    padding-left: 0;
+    border-left: 0
+}
+
+@media(min-width:0)and (max-width:991px) {
+
+    footer .bottom .list--left,
+    footer .bottom .list--right {
+        float: none !important;
+        text-align: center
+    }
+
+    footer .bottom .list--left li,
+    footer .bottom .list--right li {
+        float: none !important
+    }
+}
+
+.sr-only {
+    position: absolute;
+    left: -10000px;
+    width: 1px;
+    height: 1px;
+    top: auto;
+    overflow: hidden
+}

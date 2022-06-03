@@ -1,0 +1,1031 @@
+/*********1111111111111111111111111111*******/
+.component__source{
+	background: #f4f4f4;
+}
+.hero{
+    min-height: 320px;
+    position: relative;
+    padding-bottom: 73px;
+}
+.heading.heading--2 {
+    margin: 0;
+    margin-bottom: 45px;
+    font-size: 40px;
+    line-height: 1.2;
+}
+.breadcrumbs {
+	background-color: #fff;
+	border-bottom: 1px solid #ccc;
+	border-top: 1px solid #ccc;
+	padding: 15px 0;
+	text-align: left;
+	font-size: 14px;
+}
+.section--white{
+	margin-bottom: 78px;
+}
+.section--white, .section--gallery {
+    padding: 60px 0;
+	padding-bottom: 48px;
+}
+.breadcrumbs__list {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.breadcrumbs__item {
+	display: inline-flex;
+	align-items: center;
+}
+
+.breadcrumbs__item>img {
+	width: 13px;
+	height: 12px;
+}
+
+.breadcrumbs__crumb--first {
+	margin-left: 0;
+}
+
+.breadcrumbs__crumb {
+	margin: 0 5px;
+	position: relative;
+	font-family: VodafoneRegular;
+}
+
+.breadcrumbs a,
+.breadcrumbs a:hover {
+	color: #333;
+	text-decoration: none;
+	font-size: 14px;
+	font-family: VodafoneRegular;
+	line-height: 1.29;
+}
+
+.breadcrumbs__crumb--current {
+	color: #999;
+}
+.hero-tx-cont{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.hero-tx-cont .text{
+	text-align: left;
+}
+.hero-tx-cont .text>p{
+
+	font-family: VodafoneLight;
+	font-size: 40px;
+	line-height: 1.2;
+	color: #fff;
+	margin-bottom: 20px;
+	max-width: 638px;
+}
+.hero-tx-cont .text>span{
+	font-size: 18px;
+	line-height: 1.33;
+	color: #fff;
+    display: block;
+}
+
+.nasil-vfli-steps {
+	display: flex;
+	justify-content: space-between;
+    /* max-width: 965px; */
+    margin: 0 auto;
+	margin-bottom: 34px;
+}
+.nasil-vfli-steps .item .steps-pin{
+	position: relative;
+}
+.nasil-vfli-steps .item .steps-pin>.pin {
+	width: 16px;
+	height: 16px;
+	object-fit: contain;
+	border: solid 2px #666;
+	background-color: #fff;
+	border-radius: 50%;
+	margin: 0 auto;
+	margin-bottom: 22px;
+	z-index: 1;
+    position: relative;
+}
+.nasil-vfli-steps .item .steps-pin::after{
+    content: "";
+    width: 133%;
+    height: 2px;
+    background: #666;
+    display: block;
+    position: absolute;
+    top: 7px;
+    left: 50%;
+    z-index: 0;
+}
+.nasil-vfli-steps .item a {
+	text-decoration: underline;
+}
+.nasil-vfli-steps .item:last-child .steps-pin::after{
+    width: 100px;
+    background: #fff;
+}
+.nasil-vfli-steps .item {
+	text-align: center;
+    max-width: 234px;
+	flex-grow: 1;
+	flex-basis: auto;
+	position: relative;
+	width: 100%;
+}
+
+.nasil-vfli-steps .item img {
+	width: 150px;
+    height: 112px;
+    margin-bottom: 25px;
+}
+.nasil-vfli-steps .item p {
+	font-size: 20px;
+	font-weight: bold;
+	margin: 0;
+	margin-bottom: 5px;
+    padding: 0 5px;
+}
+
+.nasil-vfli-steps .item span {
+	display: block;
+	font-size: 18px;
+    padding: 0 5px;
+}
+.nasil-hediye-kazanabilirim .nhk-content .button{
+	width: 100%;
+	max-width: 281px;
+	margin: 0 auto;
+	display: block;
+}
+.nasil-hediye-kazanabilirim{
+	margin-bottom: 40px;
+}
+.tasi-yeni-section {
+    position: relative;
+    padding-bottom: 2px;
+    margin-top: -43px;
+}
+.now-vf-content {
+    max-width: 380px;
+	padding: 16px;
+	position: relative;
+}
+.now-vf-content>img{
+	width: 348px !important;
+	height: 136px;
+	border-radius: 6px;
+}
+.now-vf-block .heading.heading--3 {
+    font-size: 20px;
+	margin-bottom: 20px;
+}
+.now-vf-block {
+    padding: 20px 0;
+    padding-bottom: 0;
+    text-align: center;
+}
+.now-vf-block a,.now-vf-dty a{
+    width: 100%;
+    padding: 0 0;
+    color: #E60000;
+    border-top:unset;
+    margin-top: 20px;
+    margin-bottom: 8px;
+    text-align: center;
+}
+.owl-theme .owl-nav [class*=owl-] {
+    width: 40px;
+    height: 40px;
+}
+.owl-theme .owl-nav [class*=owl-] svg {
+    width: 17px;
+    height: 17px;
+}
+.owl-carousel .owl-nav button.owl-next {
+    position: absolute;
+    right: -27px;
+    padding-left: 2px!important;
+}
+.owl-carousel .owl-nav button.owl-prev {
+    position: absolute;
+    left: -27px;
+    padding-right: 2px!important;
+}
+.now-vf-block a>span,.now-vf-dty a>span{
+	display: inline;
+	margin-right: 10px;
+}
+.now-vf-block a>svg,.now-vf-dty a>svg{
+	width: 20px;
+	height: 20px;
+	margin-top: -2px;
+}
+.owl-carousel .tag {
+	border-radius: 6px;
+	padding: 4px 16px 10px 16px;
+	background-color: #007c92;
+	text-align: center;
+	position: absolute;
+	left: 3px;
+	top: 5px;
+}
+.owl-carousel .tag span {
+    font-size: 16px;
+    color: #ffffff;
+    line-height: 24px;
+    font-weight: bold;
+}
+.owl-carousel .item{
+	padding-top: 34px;
+}
+.now-vf-content .now-vf-dty {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: #333;
+    color: #fff;
+    width: 100%;
+    height: 100%;
+    border-radius: 6px;
+	padding: 16px 20px;
+    padding-bottom: 62px;
+}
+.now-vf-dty .head{
+	font-size: 20px;
+	font-weight: bold;
+	margin-bottom: 19px;
+	text-align: center;
+}
+.now-vf-dty span.list{
+	display: block;
+	font-size: 16px;
+	padding: 0;
+	margin-bottom: 27px;
+}
+.now-vf-dty span.list::before{
+	content: "";
+	width: 5px;
+	height: 5px;
+	border-radius: 50%;
+	display: inline-block;
+	background: #fff;
+	margin-bottom: 3px;
+}
+.now-vf-dty a {
+    position: absolute;
+    max-width: unset;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+	background: #333;
+	margin: 0;
+	padding-top: 24px;
+	padding-bottom: 24px;
+	border-radius: 6px;
+}
+.now-vf-dty a>svg{
+	transform: rotate(180deg);
+}
+.list-block {
+    height: 205px;
+    overflow-x: auto;
+}
+.owl-carousel .tag {
+    border-radius: 6px;
+    padding: 4px 16px 10px 16px;
+    background-color: #007c92;
+    text-align: center;
+    position: absolute;
+    left: 1px;
+    top: -29px;
+}
+.cmp-area {
+    max-width: 380px;
+    /* padding: 16px; */
+    position: relative;
+    margin: 0 auto;
+}
+.anws-img svg{
+	width: 37px;
+	height: 37px;
+	stroke-width:unset;
+    fill: currentColor;
+}
+.tabcontent .tab-sss-item{
+	margin-bottom: 16px;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #ebebeb;
+}
+.tabcontent .tab-sss-item:last-child{
+	border: unset;
+}
+.tabcontent .tab-sss-item>p{
+	margin: 0;
+}
+.tabcontent .tab-sss-item>.heading.heading--4{
+	margin-bottom: 7px;
+}
+
+.sss-item {
+	height: auto;
+	margin-bottom: 20px;
+	padding: 19px 42px 18px;
+	border-radius: 6px;
+	box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.16);
+	background-color: #fff;
+}
+
+.sss-item:last-child {
+	margin-bottom: 0;
+}
+
+.sss-block .accordion-vf {
+	font-size: 18px;
+	color: #333333;
+	width: 100%;
+	transition: 0.4s;
+	position: relative;
+	height: auto;
+}
+
+.sss-block .panel {
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 0.2s ease-out;
+}
+
+.sss-block .panel .panel-content {
+	margin-top: 16px;
+	padding-top: 20px;
+	padding-bottom: 16px;
+	border-top: 1px solid #ebebeb;
+
+}
+
+.sss-block .panel a {
+	text-decoration: underline;
+	
+}
+
+.sss-block .accordion-vf img {
+	position: absolute;
+	right: -19px;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	width: 32px;
+	height: 32px;
+}
+
+.sss-block .accordion-vf.active img {
+	transform: translate(-50%, -50%) rotate(180deg);
+}
+
+.sss-block .panel p {
+	font-size: 16px;
+	margin-bottom: 5px;
+}
+
+.sss-block p.sss-phead {
+	font-family: VodafoneLight;
+	font-size: 28px;
+	line-height: 1.29;
+	color: #333333;
+	margin-bottom: 24px;
+}
+
+.sss-block .panel ol li,
+.sss-block .panel ul li {
+	margin-bottom: 7px;
+}
+
+.sss-sections {
+	margin-bottom: 20px;
+}
+.button.btn-nsl-vfli{
+	max-width: 200px;
+	width: 100%;
+	display: block;
+	margin: 0 auto;
+}
+.basvuru-yaptinmi-block {
+    background: #333333;
+    margin-bottom: 78px;
+    color: #fff;
+    padding: 20px 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.basvuru-yaptinmi-block>p{
+	font-size: 18px;
+	margin-right: 16px;
+}
+.basvuru-yaptinmi-block .button{
+	width: 100%;
+	max-width: 181px;
+	padding: 8px 3px;
+}
+.section.section--davt
+{
+	background: #333;
+	color: #fff;
+	margin-bottom: 46px;
+}
+.vf-djtl-basvuru {
+    display: flex;
+    justify-content: space-between;
+    /* max-width: 965px; */
+    margin: 0 auto;
+    margin-bottom: 32px;
+}
+.vf-djtl-basvuru .item {
+    text-align: center;
+    max-width: 248px;
+    flex-grow: 1;
+    flex-basis: auto;
+    position: relative;
+    width: 100%;
+	text-align: center;
+}
+.vf-djtl-basvuru .item .img{
+	width: 200px;
+	height: 200px;
+	background: rgba(0, 0, 0, 0.4);
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0 auto;
+	margin-bottom: 32px;
+}
+.vf-djtl-basvuru .item p{
+	font-size: 28px;
+	font-family: VodafoneLight;
+	padding: 0 5px;
+}
+@media only screen and (max-width: 970px) {
+	.hero-tx-cont {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+	.vf-djtl-basvuru .item .img{
+		width: 100px;
+		height: 100px;
+	
+		margin-bottom: 24px;
+	}
+	.vf-djtl-basvuru .item .img>img{
+		width: 50px;
+	}
+	.vf-djtl-basvuru .item p{
+		font-size: 22px;
+	}
+	.breadcrumbs__crumb--first {
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+	}
+
+	.breadcrumbs__crumb--first>img {
+		width: 28px;
+		height: auto;
+		margin-right: 7px;
+	}
+
+	.breadcrumbs {
+		padding: 9px 0;
+	}
+
+	.hero__message .bnr-ab-img {
+		width: 365px;
+		position: absolute;
+		right: 0;
+		bottom: -86px;
+	}
+
+}
+
+
+@media only screen and (max-width: 639px){
+	.vf-djtl-basvuru {
+		flex-direction: column;
+		margin-bottom: 0;
+	}
+	.vf-djtl-basvuru .item {
+		margin: 0 auto;
+		max-width: 256px;
+		width: 100%;
+		margin-bottom: 35px;
+	}
+	.vf-djtl-basvuru .item .img>img {
+		width: 100%;
+	}
+	.vf-djtl-basvuru .item .img {
+		width: 120px;
+		height: 120px;
+		margin-bottom: 24px;
+		background: transparent;
+	}
+	.vf-djtl-basvuru .item p {
+		font-size: 20px;
+	}
+	.vf-djtl-basvuru .item:last-child{
+		margin-bottom: 0;
+	}
+	.button {
+		border-radius: 6px;
+		font-weight: normal;
+		font-family: VodafoneRegular;
+		padding: 5px 10px;
+		font-size: 18px;
+		line-height: 28px;
+	}
+	.tasi-yeni-content .button {
+		margin-top: 16px;
+		width: 100%;
+		max-width: 390px;
+		padding: 5px 10px;
+		font-size: 18px;
+	}
+	.button.btn-nsl-vfli{
+		max-width: unset;
+	}
+	.now-vf-block p {
+		min-height: 40px;
+	}
+	.now-vf-block .heading.heading--3 {
+		font-size: 16px;
+		margin-bottom: 11px;
+	}
+	.now-vf-dty span.list {
+		display: block;
+		font-size: 14px;
+		padding: 0;
+		margin-bottom: 18px;
+	}
+	.now-vf-content .now-vf-dty {
+		padding: 16px 9px;
+	}
+	.now-vf-dty .head {
+		font-size: 16px;
+	}
+	.owl-carousel .owl-nav button.owl-next {
+		right: -14px;
+	}
+	.owl-carousel .owl-nav button.owl-prev {
+		left: -14px;
+	}
+	.owl-nav {
+		top: 39%;
+	}
+	.now-vf-content>img {
+		width: 234px !important;
+		height: 92px;
+	}
+	.cmp-area {
+		max-width: 258px;
+	}
+	.section--white, .section--gallery {
+		padding: 24px 0;
+	}
+	.hero__message {
+		padding-top: 24px;
+	}
+	
+	.heading.heading--2 {
+		margin-bottom: 24px;
+		font-size: 24px;
+	}
+	.nasil-hediye-kazanabilirim .nhk-content {
+		height: auto;
+		padding: 24px 16px;
+		margin-top: 0;
+	}
+	.hero-tx-cont {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+	.hero-tx-cont .text>p {
+		font-size: 24px;
+		max-width: unset;
+		margin-top: 0;
+	}
+	.hero-tx-cont .text>span {
+		font-size: 16px;
+	}
+	.nasil-hediye-kazanabilirim .spring {
+		max-width: unset;
+		padding: 0;
+	}
+
+	.nasil-vfli-steps {
+		flex-direction: column;
+		padding: 0 5px;
+		margin-bottom: 24px;
+	}
+	.nasil-vfli-steps .item {
+		display: flex;
+		justify-content: center;
+	}
+	.nasil-vfli-steps .item img {
+		width: 53px;
+		height: 40px;
+		margin-bottom: 0;
+		margin-right: 8px;min-width: 53px;
+	}
+	.nasil-vfli-steps .item {
+		display: flex;
+		justify-content: flex-start;
+		min-height: 130px;
+		max-width: unset;
+		text-align: left;
+	}
+	.nasil-vfli-steps .item .steps-pin {
+		min-width: 16px;
+		margin:0;
+		margin-top: 5px;
+		margin-bottom: 0;
+		margin-right: 5px;
+	}
+	.nasil-vfli-steps .item .steps-pin::after {
+		width: 2px;
+		height: 100%;
+		top: 14px;
+		left: 7px;
+	}
+	.nasil-vfli-steps .item:last-child .steps-pin::after {
+		width: 2px;
+		background: #fff;
+		height: 30px;
+	}
+	.nasil-vfli-steps .item p {
+		font-size: 18px;
+		margin-bottom:8px;
+	}.nasil-vfli-steps .item span {
+		font-size: 16px;
+	}
+	.nasil-vfli-steps .item:last-child{
+		min-height: auto;
+	}
+	.tasi-yeni-block {
+		width: 100%;
+		margin:  0 auto;
+		min-height: auto;
+	}
+	.tasi-yeni-content .grid .grid__item:first-child {
+		padding-right: 0;
+		margin-bottom: 62px;
+	}
+	.tasi-yeni-content .grid .grid__item:last-child {
+		padding-left: 0;
+	}
+	.tasi-yeni-content .grid .grid__item:last-child .tasi-yeni-block {
+		float: none;
+	}
+	.tasi-yeni-content .button{
+		margin: 0 auto;
+		margin-top: 24px;
+	}
+	.tasi-yeni-block .icerik {
+		padding: 24px 10px;
+	}
+	.tasi-yeni-content .heading--3 {
+		font-size: 20px;
+		margin: 8px 0;
+		margin-bottom: 12px;
+		line-height: 19px;
+	}
+	.tasi-yeni-content .img-blck {
+		height: 34px;
+		margin-bottom: 16px;
+	}
+	.tasi-yeni-content .img-blck>img {
+		height: 34px;
+	}
+	.section--white{
+		margin-bottom: 32px;
+	}
+	.kalan-time {
+		margin: 24px 0;
+		display: block;
+		max-width: 234px;
+		
+	}
+	.kalan-time .time-blck {
+		font-size: 36px;
+		line-height: 35px;
+	}
+	.kalan-time .time-contain {
+		margin-right: 20px;
+	}
+	.hero-tx-cont .times{
+		margin: 0 auto;
+	}
+	.kalan-time .time-text {
+		font-size: 18px;
+	}
+	.hero {
+		min-height: auto;
+		height: auto;
+	}
+	.tab a.tablinks {
+		width: 110px;
+		height: 46px;
+		max-width: unset;
+		box-shadow: unset;
+		border: unset;
+		background: unset;
+		display: inline-block;
+		font-size: 16px;
+		padding: 12px 0;
+		color: #666;
+		border-radius: 0;
+	}
+	.tab a.tablinks.active{
+		background: unset;
+		border-radius:unset ;
+	}
+	
+	.sss-block .accordion-vf img {
+		right: -14px;
+	}
+
+	.sss-item {
+		padding: 16px;
+		margin-bottom: 16px;
+	}
+	.sss-block .accordion-vf {
+		font-size: 16px;
+		color: #333333;
+		width: 100%;
+		position: relative;
+		height: auto;
+		padding-right: 34px;
+	}
+	.sss-block .panel p {
+		font-size: 14px;
+		margin: 0;
+	}
+	.tabcontent {
+		padding: 30px 0;
+		padding-bottom: 0;
+	}
+	.sss-block .panel .panel-content {
+		margin-top: 16px;
+		padding-top: 16px;
+		padding-bottom: 0; 
+	}
+	.spring {
+		padding: 0 16px;
+	}
+	.spr-tab {
+		padding: 0 16px!important;
+	}
+	.answ-spring .heading.heading--2 {
+		margin-bottom: 0;
+		padding-top: 0;
+		padding-bottom: 24px;
+	}
+	
+	.basvuru-yaptinmi-block {
+		padding: 25px 16px;
+		margin-bottom: 32px;
+	}
+	.basvuru-yaptinmi-block>p{
+		font-size: 13px;
+		margin-right: 10px;
+	}
+	.basvuru-yaptinmi-block .button{
+		width: 100%;
+		max-width: 144px;
+		padding: 6px 3px;
+		font-size: 16px;
+		line-height: 16px;
+		margin: 0;
+	}
+}
+/*********1111111111111111111111111111*******/
+
+
+/*26 YAŞ*/
+.yas26-uyari-content .vf-logo{
+	margin-top: 0;
+}
+.yas26-uyari-content .vf-logo .brand__logo {
+    width: 48px;
+    height: 48px;
+}
+.yas26-uyari-content .emr-nav{
+	padding: 10px;
+	background: #fff;
+}
+.yas26-uyari-content span.logo-text {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 10px;
+    font-family: VodafoneLight;
+    font-size: 18px;
+    line-height: 2.67;
+    text-align: center;
+    color: #333;
+	width: fit-content;
+}
+.section.section-26yas{
+    padding: 49px 0;
+    padding-bottom: 48px;
+	height: calc(100vh - 68px);
+	margin: 0;
+}
+.section-26yas .heading--3 {
+	font-family: VodafoneRegularBold;
+	margin-top: 0;
+	margin-bottom: 26px;
+}
+.section-26yas .spr-text {
+    max-width: 588px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 0 16px;
+}
+.section-26yas .spr-text>p{
+	margin: 0;
+	margin-bottom: 60px;
+}
+.section-26yas .uygun-tarife-block{
+	max-width: 328px;
+	margin: 0 auto;
+	margin-top: 60px;
+	margin-bottom: 60px;
+}
+.section-26yas .uygun-tarife-block>p{
+	font-size: 20px;
+	font-family: VodafoneRegularBold;
+	font-weight: bold;
+	line-height: 1.4;
+	text-align: center;
+	margin: 0;
+	margin-bottom: 8px;
+}
+.uygun-tarife-block .uyg-tarife{
+	padding: 16px;
+	border-radius: 6px;
+	box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.16);
+	background-color: #f4f4f4;
+	text-align: left;
+	position: relative;
+}
+.uyg-tarife .head{
+	font-size: 18px;
+	line-height: 1.33;
+	margin: 0;
+}
+.uyg-tarife .fayda{
+	font-size: 14px;
+	line-height: 1.29;
+	margin: 0;
+}
+.uyg-tarife  .sinirsiz {
+    margin-top: 16px;
+}
+.uyg-tarife  .sinirsiz>span {
+    font-size: 14px;
+    display: block;
+    margin-bottom: 3px;
+}
+.uyg-tarife  .sinirsiz .icons .img>img{
+	width: 21px;
+	height: 21px;
+	margin-right: 8px;
+}
+.uyg-tarife  .sinirsiz .icons .img>img:last-child{
+	margin-right: 0;
+}
+.uyg-tarife  .sinirsiz .icons{
+	display: flex;
+	
+}
+.uyg-tarife  .sinirsiz .icons>a{
+	margin: 0 0 0 10px;
+	font-size: 14px;
+	line-height: 1.57;
+	text-decoration: underline;
+}
+.uyg-tarife .price {
+    margin: 0;
+    margin-top: 10px;
+    font-size: 18px;
+    line-height: 1.33;
+    text-align: left;
+    right: 24px;
+    top: 3px;
+    position: absolute;
+}
+.uyg-tarife .price>span {
+    font-size: 24px;
+	font-weight: bold;
+}
+.uyg-tarife .uyg-btn-cont{
+	display: flex;
+	justify-content: space-between;
+	margin-top: 29px;
+}
+.uyg-tarife .uyg-btn-cont .button {
+    max-width: 143px;
+    width: 100%;
+    padding: 10px 1px;
+    font-size: 18px;
+    line-height: 18px;
+}
+.btncont-26yas{
+	max-width: 570px;
+	margin: 0 auto;
+}
+.btncont-26yas .button{
+	width: 100%;
+	margin-top: 20px;
+	padding-bottom: 7px;
+	padding-top: 7px;
+}
+.btncont-26yas .button:last-child{
+	margin-bottom: 0;
+}
+@media only screen and (max-width: 639px){
+	.yas26-uyari-content .emr-nav {
+		padding: 5px 0;
+		background: #fff;
+	}
+	.yas26-uyari-content .vf-logo .brand__logo {
+		width: 38px;
+		height: 38px;
+	}
+	.yas26-uyari-content span.logo-text {
+		top: 0px;
+	}
+	.yas26-uyari-content .emr-nav .spring {
+		padding: 0 10px;
+	}
+	.section-26yas .heading--3 {
+		font-family: VodafoneRegularBold;
+		font-size: 20px;
+		line-height: 1.4;
+		margin-bottom: 20px;
+	}
+	.section-26yas .spr-text>p {
+		margin: 0;
+		margin-bottom: 32px;
+	}
+	.section-26yas .uygun-tarife-block {
+		margin-top: 32px;
+	}
+	.section-26yas .uygun-tarife-block>p {
+		font-size: 18px;
+		line-height: 1.33;
+		text-align: left;
+		margin-bottom: 16px;
+	}
+	.btncont-26yas {
+		max-width: 570px;
+		margin: 0 auto;
+		position: fixed;
+		width: 100%;
+		bottom: 0;
+		padding: 16px;
+		background: #fff;
+	}
+	.section.section-26yas {
+		padding: 49px 0;
+		padding-bottom: 150px;
+		height: auto;
+		margin: 0;
+		min-height: 100vh;
+	}
+	.btncont-26yas .button {
+		margin-top: 0px;
+		margin-bottom: 16px;
+	}
+	.btncont-26yas .button:last-child{
+		margin-bottom: 0;
+	}
+	
+}
+@media only screen and (max-width: 325px){
+	.uyg-tarife .price {
+		right: 7px;
+		top: 2px;
+	}
+	.uygun-tarife-block .uyg-tarife {
+		padding: 9px;
+	}
+	.uyg-tarife .uyg-btn-cont .button {
+		max-width: 126px;
+	}
+	
+}
+/*26 YAŞ---*/
