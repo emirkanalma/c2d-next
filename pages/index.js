@@ -4,21 +4,43 @@ import Link from "next/link";
 import Layout from "../components/layout";
 import Breadcrumbs from "../components/breadcrumbs";
 import Banner from "../components/banner";
-import Campaigns from "../components/campaigns";
 import Sss from "../components/sss";
 import Starrating from "../components/Starrating";
 
-function HomePage() {
+var $ = require("jquery");
+if (typeof window !== "undefined") {
+  // Client-side-only code
+  window.$ = window.jQuery = require("jquery");
+}
+
+import "owl.carousel/dist/assets/owl.carousel.css";
+import "owl.carousel/dist/assets/owl.theme.default.css";
+import dynamic from "next/dynamic";
+import Campaigns from "../components/campaigns";
+
+const OwlCarousel = dynamic(() => import("react-owl-carousel"), {
+  ssr: false,
+});
+
+export const getStaticProps = async () => {
+  const res = await fetch(
+    "https://m.vodafone.com.tr/maltgtwaycbu/api?method=getC2dMnpNLCampaigns&channelInfo=WEB"
+  );
+  const data = await res.json();
+
+  return {
+    props: { campaign: data },
+  };
+};
+
+function HomePage({ campaign }) {
   return (
     <Layout>
       <Head>
         <title>Anasayfa</title>
       </Head>
-
-      <Breadcrumbs/>
-
+      <Breadcrumbs />
       <Banner />
-
       <div className="tasi-yeni-section">
         <div className="tasi-yeni-content">
           <div className="spring">
@@ -75,9 +97,7 @@ function HomePage() {
           </div>
         </div>
       </div>
-
-      <Campaigns />
-
+      <Campaigns campaign={campaign} />
       <div className="section section--white">
         <div className="spring">
           <h2 className="heading heading--2 heading--center">
@@ -180,73 +200,83 @@ function HomePage() {
           </Link>
         </div>
       </div>
-
       <Sss />
-
       <Starrating />
-
       <div className="basvuru-yaptinmi-block">
         <p>Zaten başvuru yaptın mı? </p>
-        <Link  href="/">
-          <a className="button button--primary">
-            Başvuru Sorgula
-          </a>
+        <Link href="/">
+          <a className="button button--primary">Başvuru Sorgula</a>
         </Link>
       </div>
-
       <div className="section section--white section--davt">
-            <div className="spring">
-                <h2 className="heading heading--2 heading--center">Dijitalden Vodafone’lu olmanın avantajları neler?</h2>
-                <div className="vf-djtl-basvuru">
-
-                    <div className="item">
-                        <div className="img">
-                            <img src="https://cms.vodafone.com.tr/static/img/content/21-11/10/davt-1.png" alt=""
-                                className="hide--sm"/>
-                            <img src="https://cms.vodafone.com.tr/static/img/content/21-11/10/davt-1-mb.png" alt=""
-                                className="hide--md hide--lg"/>
-                        </div>
-                        <p>
-                            Dijitale özel avantajlar
-                        </p>
-                    </div>
-                    <div className="item">
-                        <div className="img">
-                            <img src="https://cms.vodafone.com.tr/static/img/content/21-11/10/davt-2.png" alt=""
-                                className="hide--sm"/>
-                            <img src="https://cms.vodafone.com.tr/static/img/content/21-11/10/davt-2-mb.png" alt=""
-                                className="hide--md hide--lg"/>
-                        </div>
-                        <p>
-                            Her ay hediye GB
-                        </p>
-                    </div>
-                    <div className="item">
-                        <div className="img">
-                            <img src="https://cms.vodafone.com.tr/static/img/content/21-11/10/davt-3.png" alt=""
-                                className="hide--sm"/>
-                            <img src="https://cms.vodafone.com.tr/static/img/content/21-11/10/davt-3-mb.png" alt=""
-                                className="hide--md hide--lg"/>
-                        </div>
-                        <p>
-                            Ücretsiz SIM kart
-                        </p>
-                    </div>
-                    <div className="item">
-                        <div className="img">
-                            <img src="https://cms.vodafone.com.tr/static/img/content/21-11/10/davt-4.png" alt=""
-                                className="hide--sm"/>
-                            <img src="https://cms.vodafone.com.tr/static/img/content/21-11/10/davt-4-mb.png" alt=""
-                                className="hide--md hide--lg"/>
-                        </div>
-                        <p>
-                            Ücretsiz teslimat
-                        </p>
-                    </div>
-                </div>
+        <div className="spring">
+          <h2 className="heading heading--2 heading--center">
+            Dijitalden Vodafone’lu olmanın avantajları neler?
+          </h2>
+          <div className="vf-djtl-basvuru">
+            <div className="item">
+              <div className="img">
+                <img
+                  src="https://cms.vodafone.com.tr/static/img/content/21-11/10/davt-1.png"
+                  alt=""
+                  className="hide--sm"
+                />
+                <img
+                  src="https://cms.vodafone.com.tr/static/img/content/21-11/10/davt-1-mb.png"
+                  alt=""
+                  className="hide--md hide--lg"
+                />
+              </div>
+              <p>Dijitale özel avantajlar</p>
             </div>
-
+            <div className="item">
+              <div className="img">
+                <img
+                  src="https://cms.vodafone.com.tr/static/img/content/21-11/10/davt-2.png"
+                  alt=""
+                  className="hide--sm"
+                />
+                <img
+                  src="https://cms.vodafone.com.tr/static/img/content/21-11/10/davt-2-mb.png"
+                  alt=""
+                  className="hide--md hide--lg"
+                />
+              </div>
+              <p>Her ay hediye GB</p>
+            </div>
+            <div className="item">
+              <div className="img">
+                <img
+                  src="https://cms.vodafone.com.tr/static/img/content/21-11/10/davt-3.png"
+                  alt=""
+                  className="hide--sm"
+                />
+                <img
+                  src="https://cms.vodafone.com.tr/static/img/content/21-11/10/davt-3-mb.png"
+                  alt=""
+                  className="hide--md hide--lg"
+                />
+              </div>
+              <p>Ücretsiz SIM kart</p>
+            </div>
+            <div className="item">
+              <div className="img">
+                <img
+                  src="https://cms.vodafone.com.tr/static/img/content/21-11/10/davt-4.png"
+                  alt=""
+                  className="hide--sm"
+                />
+                <img
+                  src="https://cms.vodafone.com.tr/static/img/content/21-11/10/davt-4-mb.png"
+                  alt=""
+                  className="hide--md hide--lg"
+                />
+              </div>
+              <p>Ücretsiz teslimat</p>
+            </div>
+          </div>
         </div>
+      </div>
     </Layout>
   );
 }

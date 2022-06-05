@@ -226,22 +226,22 @@
 	height: 20px;
 	margin-top: -2px;
 }
-.owl-carousel .tag {
+.cmp-area .tag {
 	border-radius: 6px;
 	padding: 4px 16px 10px 16px;
 	background-color: #007c92;
 	text-align: center;
 	position: absolute;
 	left: 3px;
-	top: 5px;
+	top: -30px;
 }
-.owl-carousel .tag span {
+.cmp-area .tag span {
     font-size: 16px;
     color: #ffffff;
     line-height: 24px;
     font-weight: bold;
 }
-.owl-carousel .item{
+.cmp-area .item{
 	padding-top: 34px;
 }
 .now-vf-content .now-vf-dty {
