@@ -1,3 +1,6 @@
+
+import "owl.carousel/dist/assets/owl.theme.default.css";
+
 import '../public/styles/framework.min.css'
 import '../public/styles/menu.css'
 import '../public/styles/tarife-card.css'

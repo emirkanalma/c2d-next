@@ -1,6 +1,9 @@
 /** @type {import('next').NextConfig} */
 const webpack = require("webpack");
 const nextConfig = {
+  experimental: {
+    nextScriptWorkers: true,
+  },
   images: {
     domains: ["cms.vodafone.com.tr", "www.vodafone.com.tr"],
   },

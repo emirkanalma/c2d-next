@@ -1,12 +1,25 @@
+import { useState } from "react";
+import Script from 'next/script'
+
 function Sss(){
+    const [toggleState, setToggleState] = useState(1);
+    const toggleTab = (index) => {
+    setToggleState(index);
+    };
+
+
+
     return(
         <div className="section section--white">
+
             <div className="spring answ-spring">
                 <h2 className="heading heading--2 heading--center">Sorularınızın cevapları burada.</h2>
             </div>
+
             <div className="spring spr-tab">
                 <div className="tab">
-                    <a className="tablinks active">
+                    <a  className={toggleState === 1 ? "tablinks active" : "tablinks"}
+                    onClick={() => toggleTab(1)}>
                         <div className="anws-img  hide--sm">
                             
                         </div>
@@ -15,7 +28,8 @@ function Sss(){
                             Avantajlar
                         </span>
                     </a>
-                    <a className="tablinks" >
+                    <a className={toggleState === 2 ? "tablinks active" : "tablinks"}
+                    onClick={() => toggleTab(2)}>
                         <div className="anws-img hide--sm">
                           
                            
@@ -25,7 +39,8 @@ function Sss(){
                             Yeni Numara
                         </span>
                     </a>
-                    <a className="tablinks">
+                    <a className={toggleState === 3 ? "tablinks active" : "tablinks"}
+                    onClick={() => toggleTab(3)}>
                         <div className="anws-img hide--sm">
                            
                         </div>
@@ -34,7 +49,8 @@ function Sss(){
                             Numara Taşıma
                         </span>
                     </a>
-                    <a className="tablinks">
+                    <a className={toggleState === 4 ? "tablinks active" : "tablinks"}
+                    onClick={() => toggleTab(4)}>
                         <div className="anws-img hide--sm">
                            
                         </div>
@@ -45,8 +61,9 @@ function Sss(){
                     </a>
                 </div>
             </div>
+            
             <div className="spring">
-                <div id="dijitalden-basvuru-avantajlari" className="tabcontent" style={{display: 'block'}}>
+                <div id="dijitalden-basvuru-avantajlari" className={toggleState === 1 ? "tabcontent  active-tabcontent" : "tabcontent"}>
                     <div className="hide--sm">
                         <div className="tab-sss-item">
                             <div className="heading heading--4">Vodafone’un dijital kanallarından Yanımda veya
@@ -244,7 +261,7 @@ function Sss(){
                     </div>
                 </div>
 
-                <div id="yeni-numara-almak" className="tabcontent">
+                <div id="yeni-numara-almak"  className={toggleState === 2 ? "tabcontent  active-tabcontent" : "tabcontent"}>
                     <div className="hide--sm">
                         <div className="tab-sss-item">
                             <div className="heading heading--4">22222Vodafone’un dijital kanallarından Yanımda veya
@@ -443,7 +460,7 @@ function Sss(){
                     </div>
                 </div>
 
-                <div id="numara-tasimak" className="tabcontent">
+                <div id="numara-tasimak"  className={toggleState === 3 ? "tabcontent  active-tabcontent" : "tabcontent"}>
 
                     <div className="hide--sm">
                         <div className="tab-sss-item">
@@ -643,12 +660,12 @@ function Sss(){
                     </div>
                 </div>
 
-                <div id="genel" className="tabcontent">
+                <div id="genel"  className={toggleState === 4 ? "tabcontent  active-tabcontent" : "tabcontent"}>
 
                     <div className="hide--sm">
                         <div className="tab-sss-item">
                             <div className="heading heading--4">44444Vodafone’un dijital kanallarından Yanımda veya
-                                Vodafone.com.tr) başvuru yaptığımda herhangi bir kurye ya da başvuru ücredi öder miyim?
+                                Vodafone.com.tr başvuru yaptığımda herhangi bir kurye ya da başvuru ücredi öder miyim?
                             </div>
                             <p>
                                 Hayır, dijitalden yaptığınız başvurular tamamen ücretsizdir; ayrıca hattınız adresinize
@@ -843,7 +860,26 @@ function Sss(){
                     </div>
                 </div>
             </div>
+
+            <Script id="accordion-js" strategy="lazyOnload">
+                {`
+                var acc = document.getElementsByClassName("accordion-vf");
+                var i;
+                for (i = 0; i < acc.length; i++) {
+                    acc[i].addEventListener("click", function () {
+                        this.classList.toggle("active");
+                        var panel = this.nextElementSibling;
+                        if (panel.style.maxHeight) {
+                            panel.style.maxHeight = null;
+                        } else {
+                            panel.style.maxHeight = panel.scrollHeight + "px";
+                        }
+                    });
+                }
+                `}
+            </Script>
         </div>
+        
     )
 }
 

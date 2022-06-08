@@ -5,22 +5,11 @@ import Layout from "../components/layout";
 import Breadcrumbs from "../components/breadcrumbs";
 import Banner from "../components/banner";
 import Sss from "../components/sss";
-import Starrating from "../components/Starrating";
-
-var $ = require("jquery");
-if (typeof window !== "undefined") {
-  // Client-side-only code
-  window.$ = window.jQuery = require("jquery");
-}
-
-import "owl.carousel/dist/assets/owl.carousel.css";
-import "owl.carousel/dist/assets/owl.theme.default.css";
-import dynamic from "next/dynamic";
+import Starrating from "../components/starrating";
 import Campaigns from "../components/campaigns";
 
-const OwlCarousel = dynamic(() => import("react-owl-carousel"), {
-  ssr: false,
-});
+
+
 
 export const getStaticProps = async () => {
   const res = await fetch(
@@ -37,10 +26,11 @@ function HomePage({ campaign }) {
   return (
     <Layout>
       <Head>
-        <title>Anasayfa</title>
+        <title>Numara Taşıma | Yeni Hat | Vodafone | Online'a Özel %15 İndirim</title>
       </Head>
       <Breadcrumbs />
       <Banner />
+      
       <div className="tasi-yeni-section">
         <div className="tasi-yeni-content">
           <div className="spring">
@@ -97,7 +87,12 @@ function HomePage({ campaign }) {
           </div>
         </div>
       </div>
-      <Campaigns campaign={campaign} />
+      {
+        campaign.status !== 400 && campaign.result.result === "SUCCESS" &&
+        <Campaigns campaign={campaign} />
+      }
+      
+
       <div className="section section--white">
         <div className="spring">
           <h2 className="heading heading--2 heading--center">
@@ -277,6 +272,8 @@ function HomePage({ campaign }) {
           </div>
         </div>
       </div>
+      
+      {/* <Script src="https://www.vodafone.com.tr/includes/anasayfa/script.min.js" /> */}
     </Layout>
   );
 }

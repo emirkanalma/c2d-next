@@ -4,7 +4,7 @@ function Header() {
 
         <nav>
             <Link href="/">
-                <a> Anasayfa</a>
+                <a> </a>
             </Link>
         </nav>
     

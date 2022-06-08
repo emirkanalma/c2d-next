@@ -11,7 +11,7 @@ function Layout ({children}){
                 <meta name="robots" content="noindex, nofollow, nodp"/>
                 <meta name="viewport" content="width=device-width, initial-scale=1"/>
             </Head>
-           <Header/>
+           {/* <Header/> */}
            <main>
                {children}
            </main>
